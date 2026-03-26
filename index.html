@@ -1,210 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novitch - Conecte-se com o mundo esportivo</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        secondary: '#3b82f6', // Blue
-                        third: '#10b981',    // Green
-                        'bg-custom': 'oklch(0.2103 0.0316 264.78)',
-                    },
-                    backgroundImage: {
-                        'gradient-primary': 'linear-gradient(to right, #3b82f6, #10b981)',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#3b82f6", // Blue
+              third: "#10b981", // Green
+              "bg-custom": "oklch(0.2103 0.0316 264.78)",
+            },
+            backgroundImage: {
+              "gradient-primary": "linear-gradient(to right, #3b82f6, #10b981)",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        body {
-            background-color: oklch(0.2103 0.0316 264.78);
-        }
+      body {
+        background-color: oklch(0.2103 0.0316 264.78);
+      }
 
-        .bg-clip-text {
-            -webkit-background-clip: text;
-            background-clip: text;
-        }
+      .bg-clip-text {
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
 
-        .hover-scale:hover {
-            transform: scale(1.05);
-        }
+      .hover-scale:hover {
+        transform: scale(1.05);
+      }
 
-        .break-words {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            word-break: break-word;
-            hyphens: auto;
-        }
+      .break-words {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+      }
 
-        /* Ensure good contrast on dark background */
-        .text-gray-900 {
-            color: #f3f4f6;
-        }
+      /* Ensure good contrast on dark background */
+      .text-gray-900 {
+        color: #f3f4f6;
+      }
 
-        .text-gray-500 {
-            color: #d1d5db;
-        }
+      .text-gray-500 {
+        color: #d1d5db;
+      }
 
-        .bg-white {
-            background-color: rgba(255, 255, 255, 0.95);
-        }
+      .bg-white {
+        background-color: rgba(255, 255, 255, 0.95);
+      }
 
-        .bg-gray-50 {
-            background-color: rgba(255, 255, 255, 0.08);
-        }
+      .bg-gray-50 {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
     </style>
-</head>
-<body class="text-gray-900 font-sans" style="background-color: oklch(0.2103 0.0316 264.78);">
-
+  </head>
+  <body
+    class="text-gray-900 font-sans"
+    style="background-color: oklch(0.2103 0.0316 264.78)"
+  >
     <!-- Hero Section -->
     <section class="relative overflow-hidden">
-        <div class="mx-auto max-w-7xl">
-            <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-                <nav class="flex items-center justify-between px-4 pt-6 sm:px-6 lg:px-8">
-                    <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                        <div class="flex items-center justify-between w-full md:w-auto">
-                            <a href="#" class="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                                Novitch
-                            </a>
-                        </div>
-                    </div>
-                </nav>
+      <div class="mx-auto max-w-7xl">
+        <div
+          class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32"
+        >
+          <nav
+            class="flex items-center justify-between px-4 pt-6 sm:px-6 lg:px-8"
+          >
+            <div
+              class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
+            >
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a
+                  href="#"
+                  class="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent"
+                >
+                  Novitch
+                </a>
+              </div>
+            </div>
+          </nav>
 
-                <main class="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                    <div class="sm:text-center lg:text-left">
-                        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
-                            <span class="block xl:inline">Conecte-se com o</span>
-                            <span class="block bg-gradient-primary bg-clip-text text-transparent xl:inline">
-                                mundo esportivo
-                            </span>
-                        </h1>
-                        <p class="mt-3 text-base text-gray-300 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:max-w-lg break-words overflow-hidden">
-                            A Novitch é a plataforma inteligente para conectar atletas, clubes, fãs e profissionais do esporte. Compartilhe experiências, descubra talentos e construa sua rede esportiva.
-                        </p>
-                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                            <div class="rounded-md shadow">
-                                <a href="#" class="flex w-full transform items-center justify-center rounded-md border border-transparent bg-gradient-primary px-8 py-3 text-base font-medium text-white transition-all duration-200 hover-scale md:px-10 md:py-4 md:text-lg">
-                                    Começar agora
-                                    <i class="fas fa-arrow-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
-        </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div class="flex h-56 w-full items-center justify-center bg-gradient-to-br from-blue-600 via-green-500 to-emerald-400 sm:h-72 md:h-96 lg:h-full lg:w-full">
-                <div class="text-center text-white p-8">
-                    <i class="fas fa-trophy mb-4 text-8xl opacity-80"></i>
-                    <p class="text-2xl font-semibold">
-                        Sua jornada esportiva começa aqui
-                    </p>
+          <main
+            class="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          >
+            <div class="sm:text-center lg:text-left">
+              <h1
+                class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl"
+              >
+                <span class="block xl:inline">Conecte-se com o</span>
+                <span
+                  class="block bg-gradient-primary bg-clip-text text-transparent xl:inline"
+                >
+                  mundo esportivo
+                </span>
+              </h1>
+              <p
+                class="mt-3 text-base text-gray-300 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:max-w-lg break-words overflow-hidden"
+              >
+                A Novitch é a plataforma inteligente para conectar atletas,
+                clubes, fãs e profissionais do esporte. Compartilhe
+                experiências, descubra talentos e construa sua rede esportiva.
+              </p>
+              <div
+                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+              >
+                <div class="rounded-md shadow">
+                  <a
+                    href="https://novitch.com.br/register"
+                    class="flex w-full transform items-center justify-center rounded-md border border-transparent bg-gradient-primary px-8 py-3 text-base font-medium text-white transition-all duration-200 hover-scale md:px-10 md:py-4 md:text-lg"
+                  >
+                    Começar agora
+                    <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
                 </div>
+              </div>
             </div>
+          </main>
         </div>
+      </div>
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div
+          class="flex h-56 w-full items-center justify-center bg-gradient-to-br from-blue-600 via-green-500 to-emerald-400 sm:h-72 md:h-96 lg:h-full lg:w-full"
+        >
+          <div class="text-center text-white p-8">
+            <i class="fas fa-trophy mb-4 text-8xl opacity-80"></i>
+            <p class="text-2xl font-semibold">
+              Sua jornada esportiva começa aqui
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-12 lg:py-24" style="background-color: rgba(255, 255, 255, 0.05);">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-blue-400 text-base font-semibold tracking-wide uppercase">
-                    Recursos
-                </h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-                    Tudo o que você precisa para crescer no esporte
-                </p>
-            </div>
-
-            <div class="mt-16">
-                <div class="space-y-10 md:grid md:grid-cols-3 md:space-y-0 md:gap-x-8 md:gap-y-10">
-                    <!-- Feature 1 -->
-                    <div class="relative">
-                        <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-primary text-white">
-                            <i class="fas fa-users text-xl"></i>
-                        </div>
-                        <p class="ml-16 text-lg leading-6 font-medium text-white">
-                            Rede Esportiva
-                        </p>
-                        <p class="mt-2 ml-16 text-base text-gray-300">
-                            Conecte-se com atletas, clubes e profissionais do esporte ao redor do mundo.
-                        </p>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="relative">
-                        <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-emerald-500 to-purple-500 text-white">
-                            <i class="fas fa-bolt text-xl"></i>
-                        </div>
-                        <p class="ml-16 text-lg leading-6 font-medium text-white">
-                            Descoberta de Talentos
-                        </p>
-                        <p class="mt-2 ml-16 text-base text-gray-300">
-                            Plataforma inteligente para descobrir e ser descoberto no mundo esportivo.
-                        </p>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="relative">
-                        <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-green-500 to-blue-700 text-white">
-                            <i class="fas fa-heart text-xl"></i>
-                        </div>
-                        <p class="ml-16 text-lg leading-6 font-medium text-white">
-                            Comunidade Engajada
-                        </p>
-                        <p class="mt-2 ml-16 text-base text-gray-300">
-                            Compartilhe conquistas, experiências e construa relacionamentos duradouros.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <section
+      class="py-12 lg:py-24"
+      style="background-color: rgba(255, 255, 255, 0.05)"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2
+            class="text-blue-400 text-base font-semibold tracking-wide uppercase"
+          >
+            Recursos
+          </h2>
+          <p
+            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl"
+          >
+            Tudo o que você precisa para crescer no esporte
+          </p>
         </div>
+
+        <div class="mt-16">
+          <div
+            class="space-y-10 md:grid md:grid-cols-3 md:space-y-0 md:gap-x-8 md:gap-y-10"
+          >
+            <!-- Feature 1 -->
+            <div class="relative">
+              <div
+                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-primary text-white"
+              >
+                <i class="fas fa-users text-xl"></i>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-white">
+                Rede Esportiva
+              </p>
+              <p class="mt-2 ml-16 text-base text-gray-300">
+                Conecte-se com atletas, clubes e profissionais do esporte ao
+                redor do mundo.
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="relative">
+              <div
+                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-emerald-500 to-purple-500 text-white"
+              >
+                <i class="fas fa-bolt text-xl"></i>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-white">
+                Descoberta de Talentos
+              </p>
+              <p class="mt-2 ml-16 text-base text-gray-300">
+                Plataforma inteligente para descobrir e ser descoberto no mundo
+                esportivo.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="relative">
+              <div
+                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-green-500 to-blue-700 text-white"
+              >
+                <i class="fas fa-heart text-xl"></i>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-white">
+                Comunidade Engajada
+              </p>
+              <p class="mt-2 ml-16 text-base text-gray-300">
+                Compartilhe conquistas, experiências e construa relacionamentos
+                duradouros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="bg-gradient-primary">
-        <div class="mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                <span class="block">Pronto para começar?</span>
-                <span class="block">Entre na Novitch hoje.</span>
-            </h2>
-            <p class="mt-4 text-lg leading-6 text-blue-100">
-                Junte-se à comunidade esportiva mais dinâmica e conectada do Brasil.
-            </p>
-            <a href="#" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-blue-600 transition-colors hover:bg-blue-50 sm:w-auto">
-                Criar conta gratuita
-            </a>
-        </div>
+      <div
+        class="mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8"
+      >
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+          <span class="block">Pronto para começar?</span>
+          <span class="block">Entre na Novitch hoje.</span>
+        </h2>
+        <p class="mt-4 text-lg leading-6 text-blue-100">
+          Junte-se à comunidade esportiva mais dinâmica e conectada do Brasil.
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-blue-600 transition-colors hover:bg-blue-50 sm:w-auto"
+        >
+          Criar conta gratuita
+        </a>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8" style="background-color: rgba(0, 0, 0, 0.3);">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2026 Novitch. Todos os direitos reservados.</p>
-        </div>
+    <footer class="py-8" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm"
+      >
+        <p>&copy; 2026 Novitch. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
     <script>
-        // Smooth scroll or simple interactions can be added here
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
+      // Smooth scroll or simple interactions can be added here
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
             });
+          }
         });
+      });
     </script>
-</body>
+  </body>
 </html>
