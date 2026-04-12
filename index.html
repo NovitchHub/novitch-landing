@@ -1,267 +1,686 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Novitch - Conecte-se com o mundo esportivo</title>
-    <link rel="icon" type="image/png" href="./logo-novitch.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              secondary: "#3b82f6", // Blue
-              third: "#10b981", // Green
-              "bg-custom": "oklch(0.2103 0.0316 264.78)",
-            },
-            backgroundImage: {
-              "gradient-primary": "linear-gradient(to right, #3b82f6, #10b981)",
-            },
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novitch — The Digital Infrastructure of Sports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
           },
-        },
-      };
-    </script>
-    <style>
-      body {
-        background-color: oklch(0.2103 0.0316 264.78);
+          colors: {
+            novitch: {
+              blue: '#1E90FF',
+              'blue-light': '#2A9DF4',
+              teal: '#2FD3C7',
+              'teal-light': '#30E0C2',
+              green: '#2BFF88',
+              'green-dark': '#1ED760',
+            }
+          }
+        }
       }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
 
-      .bg-clip-text {
-        -webkit-background-clip: text;
-        background-clip: text;
-      }
+  <svg class="noise-overlay" width="100%" height="100%">
+    <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter>
+    <rect width="100%" height="100%" filter="url(#noise)"/>
+  </svg>
 
-      .hover-scale:hover {
-        transform: scale(1.05);
-      }
-
-      .break-words {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        word-break: break-word;
-        hyphens: auto;
-      }
-
-      /* Ensure good contrast on dark background */
-      .text-gray-900 {
-        color: #f3f4f6;
-      }
-
-      .text-gray-500 {
-        color: #d1d5db;
-      }
-
-      .bg-white {
-        background-color: rgba(255, 255, 255, 0.95);
-      }
-
-      .bg-gray-50 {
-        background-color: rgba(255, 255, 255, 0.08);
-      }
-    </style>
-  </head>
-  <body
-    class="text-gray-900 font-sans"
-    style="background-color: oklch(0.2103 0.0316 264.78)"
-  >
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden">
-      <div class="mx-auto max-w-7xl">
-        <div
-          class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32"
-        >
-          <nav
-            class="flex items-center justify-between px-4 pt-6 sm:px-6 lg:px-8"
-          >
-            <div
-              class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
-            >
-              <div class="flex items-center justify-between w-full md:w-auto">
-                <a
-                  href="#"
-                  class="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent"
-                >
-                  Novitch
-                </a>
-              </div>
-            </div>
-          </nav>
-
-          <main
-            class="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-          >
-            <div class="sm:text-center lg:text-left">
-              <h1
-                class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl"
-              >
-                <span class="block xl:inline">Conecte-se com o</span>
-                <span
-                  class="block bg-gradient-primary bg-clip-text text-transparent xl:inline"
-                >
-                  mundo esportivo
-                </span>
-              </h1>
-              <p
-                class="mt-3 text-base text-gray-300 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:max-w-lg break-words overflow-hidden"
-              >
-                A Novitch é a plataforma inteligente para conectar atletas,
-                clubes, fãs e profissionais do esporte. Compartilhe
-                experiências, descubra talentos e construa sua rede esportiva.
-              </p>
-              <div
-                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-              >
-                <div class="rounded-md shadow">
-                  <a
-                    href="https://novitch.com.br/login"
-                    class="flex w-full transform items-center justify-center rounded-md border border-transparent bg-gradient-primary px-8 py-3 text-base font-medium text-white transition-all duration-200 hover-scale md:px-10 md:py-4 md:text-lg"
-                  >
-                    Começar agora
-                    <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </main>
-        </div>
+  <nav class="fixed top-0 left-0 right-0 z-40 nav-blur border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="https://novitch.com.br" class="flex items-center gap-2">
+        <img src="https://res.cloudinary.com/dllgzjkif/image/upload/f_auto,q_auto/Marca_Novitch_Simbolo_principal_hjhpd8" alt="Novitch" class="h-9 w-9">
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#problem" class="text-sm text-neutral-400 hover:text-white transition-colors duration-300">Problem</a>
+        <a href="#solution" class="text-sm text-neutral-400 hover:text-white transition-colors duration-300">Solution</a>
+        <a href="#market" class="text-sm text-neutral-400 hover:text-white transition-colors duration-300">Market</a>
+        <a href="#features" class="text-sm text-neutral-400 hover:text-white transition-colors duration-300">Features</a>
+        <a href="#vision" class="text-sm text-neutral-400 hover:text-white transition-colors duration-300">Vision</a>
       </div>
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <div
-          class="flex h-56 w-full items-center justify-center bg-gradient-to-br from-blue-600 via-green-500 to-emerald-400 sm:h-72 md:h-96 lg:h-full lg:w-full"
-        >
-          <div class="text-center text-white p-8">
-            <i class="fas fa-trophy mb-4 text-8xl opacity-80"></i>
-            <p class="text-2xl font-semibold">
-              Sua jornada esportiva começa aqui
-            </p>
-          </div>
-        </div>
+      <div class="flex items-center gap-3">
+        <a href="https://novitch.com.br" target="_blank" class="btn-primary px-5 py-2 rounded-full text-xs tracking-wide uppercase"><span>Open Platform</span></a>
+        <button id="mobileMenuBtn" class="md:hidden text-white p-2">
+          <span class="iconify" data-icon="lucide:menu" data-width="20"></span>
+        </button>
       </div>
-    </section>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/5 px-6 py-4 space-y-3">
+      <a href="#problem" class="block text-sm text-neutral-400 hover:text-white transition-colors py-2">Problem</a>
+      <a href="#solution" class="block text-sm text-neutral-400 hover:text-white transition-colors py-2">Solution</a>
+      <a href="#market" class="block text-sm text-neutral-400 hover:text-white transition-colors py-2">Market</a>
+      <a href="#features" class="block text-sm text-neutral-400 hover:text-white transition-colors py-2">Features</a>
+      <a href="#vision" class="block text-sm text-neutral-400 hover:text-white transition-colors py-2">Vision</a>
+      <a href="https://novitch.com.br" target="_blank" class="block text-sm text-novitch-green font-medium py-2">Open Platform →</a>
+    </div>
+  </nav>
 
-    <!-- Features Section -->
-    <section
-      class="py-12 lg:py-24"
-      style="background-color: rgba(255, 255, 255, 0.05)"
-    >
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-          <h2
-            class="text-blue-400 text-base font-semibold tracking-wide uppercase"
-          >
-            Recursos
-          </h2>
-          <p
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl"
-          >
-            Tudo o que você precisa para crescer no esporte
-          </p>
-        </div>
+  <section class="relative min-h-screen flex items-center justify-center pt-16 grid-bg overflow-hidden">
+    <div class="hero-glow w-[600px] h-[600px] bg-novitch-blue/10 top-[-200px] left-[-200px] animate-pulse-glow"></div>
+    <div class="hero-glow w-[500px] h-[500px] bg-novitch-teal/8 bottom-[-150px] right-[-150px] animate-pulse-glow" style="animation-delay: 2s;"></div>
+    <div class="hero-glow w-[400px] h-[400px] bg-novitch-green/5 top-[30%] right-[10%] animate-pulse-glow" style="animation-delay: 1s;"></div>
 
-        <div class="mt-16">
-          <div
-            class="space-y-10 md:grid md:grid-cols-3 md:space-y-0 md:gap-x-8 md:gap-y-10"
-          >
-            <!-- Feature 1 -->
-            <div class="relative">
-              <div
-                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-primary text-white"
-              >
-                <i class="fas fa-users text-xl"></i>
-              </div>
-              <p class="ml-16 text-lg leading-6 font-medium text-white">
-                Rede Esportiva
-              </p>
-              <p class="mt-2 ml-16 text-base text-gray-300">
-                Conecte-se com atletas, clubes e profissionais do esporte ao
-                redor do mundo.
-              </p>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="relative">
-              <div
-                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-emerald-500 to-purple-500 text-white"
-              >
-                <i class="fas fa-bolt text-xl"></i>
-              </div>
-              <p class="ml-16 text-lg leading-6 font-medium text-white">
-                Descoberta de Talentos
-              </p>
-              <p class="mt-2 ml-16 text-base text-gray-300">
-                Plataforma inteligente para descobrir e ser descoberto no mundo
-                esportivo.
-              </p>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="relative">
-              <div
-                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-green-500 to-blue-700 text-white"
-              >
-                <i class="fas fa-heart text-xl"></i>
-              </div>
-              <p class="ml-16 text-lg leading-6 font-medium text-white">
-                Comunidade Engajada
-              </p>
-              <p class="mt-2 ml-16 text-base text-gray-300">
-                Compartilhe conquistas, experiências e construa relacionamentos
-                duradouros.
-              </p>
-            </div>
-          </div>
-        </div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div class="reveal inline-flex items-center gap-2 px-4 py-1.5 rounded-full mvp-badge mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-novitch-green animate-pulse"></span>
+        <span class="text-xs font-medium text-neutral-300 tracking-wide">MVP Live — Try It Now</span>
       </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="bg-gradient-primary">
-      <div
-        class="mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8"
-      >
-        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-          <span class="block">Pronto para começar?</span>
-          <span class="block">Entre na Novitch hoje.</span>
-        </h2>
-        <p class="mt-4 text-lg leading-6 text-blue-100">
-          Junte-se à comunidade esportiva mais dinâmica e conectada do Brasil.
-        </p>
-        <a
-          href="https://novitch.com.br/register"
-          class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-blue-600 transition-colors hover:bg-blue-50 sm:w-auto"
-        >
-          Criar conta gratuita
+      <h1 class="reveal reveal-delay-1 hero-title text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6">
+        The Digital<br>
+        <span class="gradient-text">Infrastructure</span><br>
+        of Sports
+      </h1>
+
+      <p class="reveal reveal-delay-2 text-lg md:text-xl font-light text-neutral-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Novitch is the social network that connects the entire sports ecosystem — athletes, clubs, agents, brands, and professionals — in one powerful platform.
+      </p>
+
+      <div class="reveal reveal-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <a href="https://novitch.com.br" target="_blank" class="btn-primary px-8 py-3.5 rounded-full text-sm tracking-wide uppercase w-full sm:w-auto gap-2">
+          <span class="flex items-center gap-2">Access the Platform <span class="iconify" data-icon="lucide:arrow-up-right" data-width="16"></span></span>
+        </a>
+        <a href="#solution" class="btn-secondary px-8 py-3.5 rounded-full text-sm tracking-wide uppercase flex items-center justify-center gap-2 w-full sm:w-auto">
+          <span>Explore the Vision</span>
+          <span class="iconify" data-icon="lucide:arrow-down" data-width="14"></span>
         </a>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="py-8" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm"
-      >
-        <p>&copy; 2026 Novitch. Todos os direitos reservados.</p>
+      <div class="reveal reveal-delay-4 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div class="stat-card rounded-xl px-4 py-4 text-center">
+          <div class="text-2xl md:text-3xl font-bold gradient-text">$500B+</div>
+          <div class="text-xs text-neutral-500 mt-1">Global Sports Market</div>
+        </div>
+        <div class="stat-card rounded-xl px-4 py-4 text-center">
+          <div class="text-2xl md:text-3xl font-bold gradient-text-subtle">2B+</div>
+          <div class="text-xs text-neutral-500 mt-1">People in Sports</div>
+        </div>
+        <div class="stat-card rounded-xl px-4 py-4 text-center">
+          <div class="text-2xl md:text-3xl font-bold gradient-text">0</div>
+          <div class="text-xs text-neutral-500 mt-1">Dominant Platform</div>
+        </div>
+        <div class="stat-card rounded-xl px-4 py-4 text-center">
+          <div class="text-2xl md:text-3xl font-bold gradient-text-subtle">∞</div>
+          <div class="text-xs text-neutral-500 mt-1">Opportunities Lost</div>
+        </div>
       </div>
-    </footer>
+    </div>
 
-    <script>
-      // Smooth scroll or simple interactions can be added here
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-    </script>
-  </body>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
+      <span class="text-[10px] uppercase tracking-[0.2em] text-neutral-600">Scroll</span>
+      <div class="w-px h-8 bg-gradient-to-b from-novitch-blue/50 to-transparent"></div>
+    </div>
+  </section>
+
+  <section class="border-y border-white/5 py-5 overflow-hidden bg-black">
+    <div class="marquee-track">
+      <div class="flex items-center gap-12 px-6 text-neutral-600 text-xs uppercase tracking-[0.15em] whitespace-nowrap">
+        <span>Football</span><span class="text-novitch-blue/30">◆</span>
+        <span>Basketball</span><span class="text-novitch-teal/30">◆</span>
+        <span>Tennis</span><span class="text-novitch-green/30">◆</span>
+        <span>MMA & Combat Sports</span><span class="text-novitch-blue/30">◆</span>
+        <span>Athletics</span><span class="text-novitch-teal/30">◆</span>
+        <span>Swimming</span><span class="text-novitch-green/30">◆</span>
+        <span>Volleyball</span><span class="text-novitch-blue/30">◆</span>
+        <span>eSports</span><span class="text-novitch-teal/30">◆</span>
+        <span>Golf</span><span class="text-novitch-green/30">◆</span>
+        <span>Surfing</span><span class="text-novitch-blue/30">◆</span>
+        <span>F1 & Motorsport</span><span class="text-novitch-teal/30">◆</span>
+        <span>Rugby</span><span class="text-novitch-green/30">◆</span>
+        <span>Cricket</span><span class="text-novitch-blue/30">◆</span>
+        <span>Baseball</span><span class="text-novitch-teal/30">◆</span>
+      </div>
+      <div class="flex items-center gap-12 px-6 text-neutral-600 text-xs uppercase tracking-[0.15em] whitespace-nowrap">
+        <span>Football</span><span class="text-novitch-blue/30">◆</span>
+        <span>Basketball</span><span class="text-novitch-teal/30">◆</span>
+        <span>Tennis</span><span class="text-novitch-green/30">◆</span>
+        <span>MMA & Combat Sports</span><span class="text-novitch-blue/30">◆</span>
+        <span>Athletics</span><span class="text-novitch-teal/30">◆</span>
+        <span>Swimming</span><span class="text-novitch-green/30">◆</span>
+        <span>Volleyball</span><span class="text-novitch-blue/30">◆</span>
+        <span>eSports</span><span class="text-novitch-teal/30">◆</span>
+        <span>Golf</span><span class="text-novitch-green/30">◆</span>
+        <span>Surfing</span><span class="text-novitch-blue/30">◆</span>
+        <span>F1 & Motorsport</span><span class="text-novitch-teal/30">◆</span>
+        <span>Rugby</span><span class="text-novitch-green/30">◆</span>
+        <span>Cricket</span><span class="text-novitch-blue/30">◆</span>
+        <span>Baseball</span><span class="text-novitch-teal/30">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem" class="relative py-24 md:py-32 overflow-hidden">
+    <div class="hero-glow w-[400px] h-[400px] bg-red-500/5 top-[20%] right-[-100px]"></div>
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <div class="reveal flex items-center gap-3 mb-6">
+          <div class="w-8 h-px bg-red-500/50"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.15em] text-red-400/80">The Problem</span>
+        </div>
+        <h2 class="reveal reveal-delay-1 text-3xl md:text-5xl font-bold tracking-tight mb-6">
+          A <span class="text-red-400/80">$500B+ Industry</span>,<br>
+          Digitally Broken
+        </h2>
+        <p class="reveal reveal-delay-2 text-lg font-light text-neutral-400 leading-relaxed">
+          The global sports market moves hundreds of billions of dollars annually. Yet, there's no dominant digital platform connecting all the players in this ecosystem efficiently. The result? Chaos, fragmentation, and lost opportunities — every single day.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="reveal problem-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-red-400/80" data-icon="lucide:eye-off" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">Athletes Can't Showcase Their Potential</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">Talent gets buried under memes, ads, and irrelevant content on generic platforms. No dedicated space exists for athletes to build a professional sports portfolio.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1 problem-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-red-400/80" data-icon="lucide:unplug" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">No Qualified Networking Exists</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">Agents, scouts, and clubs struggle to find the right connections. Traditional networks offer noise, not signal — making qualified networking nearly impossible.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2 problem-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-red-400/80" data-icon="lucide:puzzle" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">Fragmented Ecosystem</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">Information, services, and opportunities are scattered across dozens of platforms, WhatsApp groups, and spreadsheets. There's no single source of truth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3 problem-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-red-400/80" data-icon="lucide:banknote" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">Opportunities Lost Daily</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">Sponsorships, transfers, partnerships, and deals slip through the cracks because the right people never find each other at the right time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="solution" class="relative py-24 md:py-32 border-t border-white/5 overflow-hidden">
+    <div class="hero-glow w-[500px] h-[500px] bg-novitch-blue/8 top-[10%] left-[-200px]"></div>
+    <div class="hero-glow w-[400px] h-[400px] bg-novitch-green/5 bottom-[10%] right-[-100px]"></div>
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <div class="reveal flex items-center gap-3 mb-6">
+          <div class="w-8 h-px bg-novitch-green/50"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.15em] text-novitch-green/80">The Solution</span>
+        </div>
+        <h2 class="reveal reveal-delay-1 text-3xl md:text-5xl font-bold tracking-tight mb-6">
+          One Platform.<br>
+          <span class="gradient-text">Entire Ecosystem.</span>
+        </h2>
+        <p class="reveal reveal-delay-2 text-lg font-light text-neutral-400 leading-relaxed">
+          Novitch is a niche, intuitive social network — 100% focused on sports. We eliminate the noise of generic platforms and create an environment where connections, deals, and opportunities actually happen.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="reveal solution-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-novitch-green/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-novitch-green" data-icon="lucide:users" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">Quality Networking</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">Connect with athletes, agents, clubs, brands, and professionals — all verified and relevant to your sports career or business.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1 solution-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-novitch-green/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-novitch-green" data-icon="lucide:briefcase" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">Real Business Opportunities</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">Sponsorships, transfers, partnerships, and services — users don't just consume content, they generate value and make money within the platform.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2 solution-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-novitch-green/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-novitch-green" data-icon="lucide:layout-dashboard" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">Professional Portfolios</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">Athletes and professionals can showcase stats, achievements, videos, and career history in a format designed for the sports industry.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3 solution-card rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-novitch-green/10 flex items-center justify-center mt-0.5">
+              <span class="iconify text-novitch-green" data-icon="lucide:shield-check" data-width="18"></span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm mb-2">Zero Noise, All Signal</h3>
+              <p class="text-sm text-neutral-500 leading-relaxed">No memes, no irrelevant ads, no algorithm manipulation. Every piece of content and every connection has purpose in the sports world.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="market" class="relative py-24 md:py-32 border-t border-white/5 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="reveal flex items-center justify-center gap-3 mb-6">
+          <div class="w-8 h-px bg-novitch-blue/50"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.15em] text-novitch-blue/80">Market Opportunity</span>
+          <div class="w-8 h-px bg-novitch-blue/50"></div>
+        </div>
+        <h2 class="reveal reveal-delay-1 text-3xl md:text-5xl font-bold tracking-tight mb-6">
+          The Largest Underserved<br>
+          <span class="gradient-text">Digital Market</span>
+        </h2>
+        <p class="reveal reveal-delay-2 text-lg font-light text-neutral-400 leading-relaxed">
+          Sports is one of the biggest industries on the planet — yet it remains dramatically underexplored digitally. The gap between the industry's size and its digital infrastructure is Novitch's opportunity.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="reveal gradient-border rounded-2xl p-8 text-center glow-blue">
+          <div class="text-4xl md:text-5xl font-bold gradient-text mb-3">$500B+</div>
+          <div class="text-sm font-medium text-neutral-300 mb-2">Global Sports Industry</div>
+          <p class="text-xs text-neutral-500 leading-relaxed">Annual revenue across all sports verticals — and growing faster than ever.</p>
+        </div>
+
+        <div class="reveal reveal-delay-1 gradient-border rounded-2xl p-8 text-center glow-teal">
+          <div class="text-4xl md:text-5xl font-bold gradient-text-subtle mb-3">50M+</div>
+          <div class="text-sm font-medium text-neutral-300 mb-2">Sports Professionals</div>
+          <p class="text-xs text-neutral-500 leading-relaxed">Coaches, agents, managers, physios, and other professionals globally.</p>
+        </div>
+
+        <div class="reveal reveal-delay-2 gradient-border rounded-2xl p-8 text-center glow-green">
+          <div class="text-4xl md:text-5xl font-bold gradient-text mb-3">4.4B+</div>
+          <div class="text-sm font-medium text-neutral-300 mb-2">Sports Fans Worldwide</div>
+          <p class="text-xs text-neutral-500 leading-relaxed">Over half the planet follows sports — making it the largest shared interest on Earth.</p>
+        </div>
+      </div>
+
+      <div class="reveal mt-12 gradient-border rounded-2xl p-8 md:p-10">
+        <div class="flex flex-col md:flex-row items-start gap-6">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl icon-circle flex items-center justify-center">
+            <span class="iconify text-novitch-blue" data-icon="lucide:trending-up" data-width="22"></span>
+          </div>
+          <div>
+            <h3 class="font-semibold text-base mb-3">The "LinkedIn of Sports" Doesn't Exist Yet</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed mb-4">
+              LinkedIn built a $100B+ company connecting professionals. Instagram and TikTok captured content creation. But no platform has ever captured the <strong class="text-neutral-200">sports ecosystem</strong> — the connections, the deals, the portfolios, the transactions. This is not a feature; it's a category. And it's still empty.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="text-[10px] uppercase tracking-wider font-medium text-novitch-blue/70 bg-novitch-blue/5 border border-novitch-blue/10 px-3 py-1 rounded-full">Category Creator</span>
+              <span class="text-[10px] uppercase tracking-wider font-medium text-novitch-teal/70 bg-novitch-teal/5 border border-novitch-teal/10 px-3 py-1 rounded-full">Network Effects</span>
+              <span class="text-[10px] uppercase tracking-wider font-medium text-novitch-green/70 bg-novitch-green/5 border border-novitch-green/10 px-3 py-1 rounded-full">High Retention</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="relative py-24 md:py-32 border-t border-white/5 overflow-hidden grid-bg">
+    <div class="hero-glow w-[500px] h-[500px] bg-novitch-teal/5 top-[30%] left-[-200px]"></div>
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="reveal flex items-center justify-center gap-3 mb-6">
+          <div class="w-8 h-px bg-novitch-teal/50"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.15em] text-novitch-teal/80">Platform Features</span>
+          <div class="w-8 h-px bg-novitch-teal/50"></div>
+        </div>
+        <h2 class="reveal reveal-delay-1 text-3xl md:text-5xl font-bold tracking-tight mb-6">
+          Everything Sports Needs,<br>
+          <span class="gradient-text">In One Place</span>
+        </h2>
+        <p class="reveal reveal-delay-2 text-lg font-light text-neutral-400 leading-relaxed">
+          Networking, profiles, transactions, and services — built from the ground up for the sports ecosystem.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="reveal feature-card rounded-2xl p-7 group">
+          <div class="w-11 h-11 rounded-xl icon-circle flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-blue" data-icon="lucide:user-check" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-sm mb-2">Categorized Profiles</h3>
+          <p class="text-sm text-neutral-500 leading-relaxed">Every user is categorized — athletes, agents, clubs, brands, coaches, and more.</p>
+        </div>
+
+        <div class="reveal reveal-delay-1 feature-card rounded-2xl p-7 group">
+          <div class="w-11 h-11 rounded-xl icon-circle flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-teal" data-icon="lucide:trophy" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-sm mb-2">Sports Profiles</h3>
+          <p class="text-sm text-neutral-500 leading-relaxed">Create your profile with bio, location, sports interests, and share content with the community.</p>
+        </div>
+
+        <div class="reveal reveal-delay-2 feature-card rounded-2xl p-7 group">
+          <div class="w-11 h-11 rounded-xl icon-circle flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-green" data-icon="lucide:handshake" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-sm mb-2">Profile Discovery</h3>
+          <p class="text-sm text-neutral-500 leading-relaxed">Find and connect with relevant people through smart profile suggestions — with more advanced matching features coming soon.</p>
+        </div>
+
+        <div class="reveal feature-card rounded-2xl p-7 group">
+          <div class="w-11 h-11 rounded-xl icon-circle flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-green" data-icon="lucide:credit-card" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-sm mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-1">
+            In-Platform Transactions
+            <span class="soon-badge text-[9px] font-semibold uppercase tracking-wider text-novitch-blue/80 bg-novitch-blue/8 border border-novitch-blue/15 px-2 py-0.5 rounded-full">Soon</span>
+          </h3>
+          <p class="text-sm text-neutral-500 leading-relaxed">Negotiate deals, sponsorships, and services directly on Novitch. From first contact to signed contract — without leaving the platform.</p>
+        </div>
+
+        <div class="reveal reveal-delay-1 feature-card rounded-2xl p-7 group">
+          <div class="w-11 h-11 rounded-xl icon-circle flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-blue" data-icon="lucide:megaphone" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-sm mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-1">
+            Opportunity Board
+            <span class="soon-badge text-[9px] font-semibold uppercase tracking-wider text-novitch-blue/80 bg-novitch-blue/8 border border-novitch-blue/15 px-2 py-0.5 rounded-full">Soon</span>
+          </h3>
+          <p class="text-sm text-neutral-500 leading-relaxed">A dedicated hub for trials, job openings, sponsorships, partnerships, and events — filterable by sport, location, and category.</p>
+        </div>
+
+        <div class="reveal reveal-delay-2 feature-card rounded-2xl p-7 group">
+          <div class="w-11 h-11 rounded-xl icon-circle flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-teal" data-icon="lucide:bar-chart-3" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-sm mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-1">
+            Analytics & Insights
+            <span class="soon-badge text-[9px] font-semibold uppercase tracking-wider text-novitch-blue/80 bg-novitch-blue/8 border border-novitch-blue/15 px-2 py-0.5 rounded-full">Soon</span>
+          </h3>
+          <p class="text-sm text-neutral-500 leading-relaxed">Track profile views, connection growth, engagement metrics, and market trends relevant to your sports niche.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-24 md:py-32 border-t border-white/5 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="reveal flex items-center justify-center gap-3 mb-6">
+          <div class="w-8 h-px bg-novitch-blue/50"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.15em] text-novitch-blue/80">For Everyone in Sports</span>
+          <div class="w-8 h-px bg-novitch-blue/50"></div>
+        </div>
+        <h2 class="reveal reveal-delay-1 text-3xl md:text-5xl font-bold tracking-tight">
+          Built for the<br>
+          <span class="gradient-text">Entire Ecosystem</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="reveal feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-blue" data-icon="lucide:medal" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Athletes</h3>
+          <p class="text-[11px] text-neutral-500">Showcase talent & get discovered</p>
+        </div>
+
+        <div class="reveal reveal-delay-1 feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-teal" data-icon="lucide:building-2" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Clubs & Teams</h3>
+          <p class="text-[11px] text-neutral-500">Scout, recruit & manage talent</p>
+        </div>
+
+        <div class="reveal reveal-delay-2 feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-green" data-icon="lucide:tag" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Agents & Scouts</h3>
+          <p class="text-[11px] text-neutral-500">Find clients & close deals</p>
+        </div>
+
+        <div class="reveal reveal-delay-3 feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-blue" data-icon="lucide:sparkles" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Brands & Sponsors</h3>
+          <p class="text-[11px] text-neutral-500">Activate sports marketing</p>
+        </div>
+
+        <div class="reveal feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-teal" data-icon="lucide:clipboard-list" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Coaches</h3>
+          <p class="text-[11px] text-neutral-500">Build authority & find opportunities</p>
+        </div>
+
+        <div class="reveal reveal-delay-1 feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-green" data-icon="lucide:stethoscope" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Health Pros</h3>
+          <p class="text-[11px] text-neutral-500">Physios, nutritionists, sports med</p>
+        </div>
+
+        <div class="reveal reveal-delay-2 feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-blue" data-icon="lucide:clapperboard" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Content Creators</h3>
+          <p class="text-[11px] text-neutral-500">Sports media & journalism</p>
+        </div>
+
+        <div class="reveal reveal-delay-3 feature-card rounded-xl p-5 text-center group">
+          <div class="w-12 h-12 mx-auto rounded-full icon-circle flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+            <span class="iconify text-novitch-teal" data-icon="lucide:calendar-check" data-width="20"></span>
+          </div>
+          <h3 class="font-semibold text-xs mb-1">Event Organizers</h3>
+          <p class="text-[11px] text-neutral-500">Promote & manage sports events</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision" class="relative py-24 md:py-32 border-t border-white/5 overflow-hidden">
+    <div class="hero-glow w-[600px] h-[600px] bg-novitch-green/5 top-[20%] left-[50%] -translate-x-1/2"></div>
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="reveal text-center mb-16">
+        <div class="flex items-center justify-center gap-3 mb-6">
+          <div class="w-8 h-px bg-novitch-green/50"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.15em] text-novitch-green/80">Our Vision</span>
+          <div class="w-8 h-px bg-novitch-green/50"></div>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+          Where Sports<br>
+          <span class="gradient-text">Really Happens</span>
+        </h2>
+      </div>
+
+      <div class="relative">
+        <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px timeline-line opacity-30 md:-translate-x-px"></div>
+
+        <div class="reveal relative flex flex-col md:flex-row items-start mb-16 md:mb-20">
+          <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-novitch-blue/10 border border-novitch-blue/20 mb-2">
+              <span class="iconify text-novitch-blue" data-icon="lucide:check" data-width="12"></span>
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-novitch-blue/80">In Progress</span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Connect the Ecosystem</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed">Bring every actor in sports into a single, organized digital environment. Build profiles, establish connections, and create the network foundation.</p>
+          </div>
+          <div class="absolute left-2.5 md:left-1/2 md:-translate-x-1/2 w-3 h-3 rounded-full bg-novitch-blue mt-1 shadow-[0_0_10px_rgba(30,144,255,0.5)]"></div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+
+        <div class="reveal relative flex flex-col md:flex-row items-start mb-16 md:mb-20">
+          <div class="md:w-1/2 md:pr-12"></div>
+          <div class="absolute left-2.5 md:left-1/2 md:-translate-x-1/2 w-3 h-3 rounded-full bg-novitch-teal mt-1 shadow-[0_0_10px_rgba(47,211,199,0.5)]"></div>
+          <div class="md:w-1/2 md:pl-12 pl-12">
+            <span class="text-xs font-semibold uppercase tracking-wider text-novitch-teal/70 mb-2 block">Next Phase</span>
+            <h3 class="text-lg font-semibold mb-2">Activate Opportunities</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed">Launch the opportunity board, smart matching, and in-platform transactions. Turn connections into deals, sponsorships, and partnerships.</p>
+          </div>
+        </div>
+
+        <div class="reveal relative flex flex-col md:flex-row items-start">
+          <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+            <span class="text-xs font-semibold uppercase tracking-wider text-novitch-green/70 mb-2 block">Long-Term</span>
+            <h3 class="text-lg font-semibold mb-2">Become the Infrastructure</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed">Evolve into the essential digital layer of the global sports industry — the place where every professional interaction, transaction, and opportunity lives.</p>
+          </div>
+          <div class="absolute left-2.5 md:left-1/2 md:-translate-x-1/2 w-3 h-3 rounded-full bg-novitch-green mt-1 shadow-[0_0_10px_rgba(43,255,136,0.5)]"></div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-24 md:py-32 border-t border-white/5 overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="reveal">
+        <span class="iconify text-novitch-blue/20 mb-8 inline-block" data-icon="lucide:quote" data-width="48"></span>
+        <blockquote class="text-2xl md:text-4xl font-serif font-normal leading-snug tracking-tight mb-8">
+          Novitch isn't just a social network — it's the <span class="gradient-text">infrastructure</span> that sports has been missing. We're building the place where <span class="gradient-text-subtle">opportunities are found, not lost</span>.
+        </blockquote>
+        <div class="flex items-center justify-center gap-3">
+          <div class="w-8 h-px bg-novitch-blue/30"></div>
+          <span class="text-xs font-medium text-neutral-500 uppercase tracking-wider">Arthur Viana, Founder & CEO</span>
+          <div class="w-8 h-px bg-novitch-blue/30"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="relative py-24 md:py-32 border-t border-white/5 cta-section overflow-hidden">
+    <div class="hero-glow w-[500px] h-[500px] bg-novitch-blue/8 top-[20%] left-[50%] -translate-x-1/2"></div>
+    <div class="hero-glow w-[300px] h-[300px] bg-novitch-green/5 bottom-[10%] right-[10%]"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+      <div class="reveal">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mvp-badge mb-8">
+          <span class="w-1.5 h-1.5 rounded-full bg-novitch-green animate-pulse"></span>
+          <span class="text-xs font-medium text-neutral-300 tracking-wide">MVP Available Now</span>
+        </div>
+      </div>
+
+      <h2 class="reveal reveal-delay-1 text-3xl md:text-5xl font-bold tracking-tight mb-6">
+        The Platform Is Live.<br>
+        <span class="gradient-text">Are You In?</span>
+      </h2>
+
+      <p class="reveal reveal-delay-2 text-lg font-light text-neutral-400 leading-relaxed mb-10">
+        Whether you're an investor, a sports professional, or an organization — Novitch is ready. Create your profile, start connecting, and experience the future of sports networking.
+      </p>
+
+      <div class="reveal reveal-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+        <a href="https://novitch.com.br" target="_blank" class="btn-primary px-10 py-4 rounded-full text-sm tracking-wide uppercase w-full sm:w-auto">
+          <span class="flex items-center gap-2">Go to Novitch <span class="iconify" data-icon="lucide:arrow-up-right" data-width="18"></span></span>
+        </a>
+        <a href="https://novitch.com.br/register" target="_blank" class="btn-secondary px-8 py-4 rounded-full text-sm tracking-wide uppercase flex items-center justify-center gap-2 w-full sm:w-auto">
+          <span>Create Your Profile</span>
+        </a>
+      </div>
+
+      <div class="reveal reveal-delay-4 flex flex-wrap items-center justify-center gap-6 mt-8 text-neutral-600">
+        <div class="flex items-center gap-2 text-xs">
+          <span class="iconify" data-icon="lucide:shield-check" data-width="14"></span>
+          <span>Secure & Private</span>
+        </div>
+        <div class="flex items-center gap-2 text-xs">
+          <span class="iconify" data-icon="lucide:zap" data-width="14"></span>
+          <span>MVP Live</span>
+        </div>
+        <div class="flex items-center gap-2 text-xs">
+          <span class="iconify" data-icon="lucide:globe" data-width="14"></span>
+          <span>novitch.com.br</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/5 py-16 bg-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <a href="https://novitch.com.br" class="flex items-center gap-2 mb-4">
+            <img src="https://res.cloudinary.com/dllgzjkif/image/upload/f_auto,q_auto/Marca_Novitch_Simbolo_principal_hjhpd8" alt="Novitch" class="h-8 w-8">
+          </a>
+          <p class="text-sm text-neutral-500 leading-relaxed max-w-sm mb-6">
+            The digital infrastructure of sports. Connecting the entire ecosystem — athletes, clubs, agents, brands, and professionals — in one platform.
+          </p>
+          <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/novitch.official/" target="_blank" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-500 hover:text-white hover:border-novitch-blue/30 transition-all duration-300">
+              <span class="iconify" data-icon="lucide:instagram" data-width="15"></span>
+            </a>
+            <a href="https://www.linkedin.com/company/novitchglobal/" target="_blank" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-500 hover:text-white hover:border-novitch-blue/30 transition-all duration-300">
+              <span class="iconify" data-icon="lucide:linkedin" data-width="15"></span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-4">Platform</h4>
+          <ul class="space-y-3">
+            <li><a href="https://novitch.com.br" target="_blank" class="text-sm text-neutral-500 hover:text-white transition-colors duration-300">Open App</a></li>
+            <li><a href="#features" class="text-sm text-neutral-500 hover:text-white transition-colors duration-300">Features</a></li>
+            <li><a href="#market" class="text-sm text-neutral-500 hover:text-white transition-colors duration-300">Market</a></li>
+            <li><a href="#vision" class="text-sm text-neutral-500 hover:text-white transition-colors duration-300">Vision</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-4">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="mailto:contato@novitch.com.br" class="text-sm text-neutral-500 hover:text-white transition-colors duration-300">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/5 text-center">
+        <p class="text-xs text-neutral-600">&copy; 2026 Novitch. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
