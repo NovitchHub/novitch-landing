@@ -58,16 +58,16 @@ var T = {
       "Novitch is a niche, intuitive social network — 100% focused on sports. We eliminate the noise of generic platforms and create an environment where connections, deals, and opportunities actually happen.",
     "sol.c1t": "Quality Networking",
     "sol.c1d":
-      "Connect with athletes, agents, clubs, brands, and professionals — all verified and relevant to your sports career or business.",
-    "sol.c2t": "Real Business Opportunities",
+      "Connect with athletes, agents, clubs, brands, and professionals relevant to your sports career or business.",
+    "sol.c2t": "Professional Portfolios",
     "sol.c2d":
-      "Sponsorships, transfers, partnerships, and services — users don't just consume content, they generate value and make money within the platform.",
-    "sol.c3t": "Professional Portfolios",
+      "Athletes and professionals can showcase their achievements, videos, career history, and relevant information in a structured profile designed to highlight their sports journey.",
+    "sol.c3t": "Opportunities in Sports",
     "sol.c3d":
-      "Athletes and professionals can showcase stats, achievements, videos, and career history in a format designed for the sports industry.",
-    "sol.c4t": "Zero Noise, All Signal",
+      "Novitch connects athletes, professionals, and clubs, creating an environment where opportunities can emerge through networking, visibility, and engagement.",
+    "sol.c4t": "Focus on What Matters",
     "sol.c4d":
-      "No memes, no irrelevant ads, no algorithm manipulation. Every piece of content and every connection has purpose in the sports world.",
+      "A network where content and connections are sports-focused, with fewer distractions and more relevance for those who live the game.",
     "mkt.label": "Market Opportunity",
     "mkt.title":
       'The Largest Underserved<br><span class="gradient-text">Digital Market</span>',
@@ -227,16 +227,16 @@ var T = {
       "Novitch é uma rede social de nicho e intuitiva — 100% focada em esporte. Eliminamos o ruído das plataformas genéricas e criamos um ambiente onde conexões, negócios e oportunidades realmente acontecem.",
     "sol.c1t": "Networking de Qualidade",
     "sol.c1d":
-      "Conecte-se com atletas, agentes, clubes, marcas e profissionais — todos verificados e relevantes para sua carreira ou negócio esportivo.",
-    "sol.c2t": "Oportunidades Reais de Negócio",
+      "Conecte-se com atletas, agentes, clubes, marcas e profissionais relevantes para sua carreira ou negócio esportivo.",
+    "sol.c2t": "Portfólios Profissionais",
     "sol.c2d":
-      "Patrocínios, transferências, parcerias e serviços — os usuários não apenas consomem conteúdo, eles geram valor e ganham dinheiro dentro da plataforma.",
-    "sol.c3t": "Portfólios Profissionais",
+      "Atletas e profissionais podem exibir suas conquistas, vídeos, histórico de carreira e informações relevantes em um perfil estruturado para destacar sua trajetória no esporte.",
+    "sol.c3t": "Oportunidades no Esporte",
     "sol.c3d":
-      "Atletas e profissionais podem exibir estatísticas, conquistas, vídeos e histórico de carreira em um formato desenhado para a indústria do esporte.",
-    "sol.c4t": "Zero Ruído, Todo Sinal",
+      "A Novitch conecta atletas, profissionais e clubes, criando um ambiente onde oportunidades podem surgir por meio de networking, visibilidade e engajamento.",
+    "sol.c4t": "Foco no que Importa",
     "sol.c4d":
-      "Sem memes, sem anúncios irrelevantes, sem manipulação de algoritmo. Cada conteúdo e cada conexão tem propósito no mundo esportivo.",
+      "Uma rede onde conteúdos e conexões são voltados ao esporte, com menos distrações e mais relevância para quem vive o jogo.",
     "mkt.label": "Oportunidade de Mercado",
     "mkt.title":
       'O Maior Mercado Digital<br><span class="gradient-text">Desatendido</span>',
