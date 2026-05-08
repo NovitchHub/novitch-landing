@@ -12,7 +12,7 @@ var T = {
     "hero.title":
       'The Digital<br><span class="gradient-text">Infrastructure</span><br>of Sports',
     "hero.desc":
-      "Novitch is the social network that connects the entire sports ecosystem — athletes, clubs, agents, brands, and professionals — in one powerful platform.",
+      "Novitch is the platform that connects the entire sports ecosystem — athletes, clubs, agents, brands, and professionals — in one powerful platform.",
     "hero.cta1": "Access the Platform",
     "hero.cta2": "Explore the Vision",
     "hero.s1l": "Global Sports Market",
@@ -55,7 +55,7 @@ var T = {
     "sol.title":
       'One Platform.<br><span class="gradient-text">Entire Ecosystem.</span>',
     "sol.desc":
-      "Novitch is a niche, intuitive social network — 100% focused on sports. We eliminate the noise of generic platforms and create an environment where connections, deals, and opportunities actually happen.",
+      "Novitch is a niche, intuitive platform — 100% focused on sports. We eliminate the noise of generic platforms and create an environment where connections, deals, and opportunities actually happen.",
     "sol.c1t": "Quality Networking",
     "sol.c1d":
       "Connect with athletes, agents, clubs, brands, and professionals relevant to your sports career or business.",
@@ -147,7 +147,7 @@ var T = {
     "vis.p3d":
       "Evolve into the essential digital layer of the global sports industry — the place where every professional interaction, transaction, and opportunity lives.",
     "qt.text":
-      'Novitch isn\'t just a social network — it\'s the <span class="gradient-text">infrastructure</span> that sports has been missing. We\'re building the place where <span class="gradient-text-subtle">opportunities are found, not lost</span>.',
+      'Novitch isn\'t just a platform — it\'s the <span class="gradient-text">infrastructure</span> that sports has been missing. We\'re building the place where <span class="gradient-text-subtle">opportunities are found, not lost</span>.',
     "qt.author": "Arthur Viana, Founder & CEO",
     "cta.badge": "MVP Available Now",
     "cta.title":
@@ -181,7 +181,7 @@ var T = {
     "hero.title":
       'A Infraestrutura<br><span class="gradient-text">Digital</span><br>do Esporte',
     "hero.desc":
-      "Novitch é a rede social que conecta todo o ecossistema esportivo — atletas, clubes, agentes, marcas e profissionais — em uma plataforma poderosa.",
+      "Novitch é a plataforma que conecta todo o ecossistema esportivo — atletas, clubes, agentes, marcas e profissionais — em uma plataforma poderosa.",
     "hero.cta1": "Acessar a Plataforma",
     "hero.cta2": "Explorar a Visão",
     "hero.s1l": "Mercado Esportivo Global",
@@ -224,7 +224,7 @@ var T = {
     "sol.title":
       'Uma Plataforma.<br><span class="gradient-text">Ecossistema Inteiro.</span>',
     "sol.desc":
-      "Novitch é uma rede social de nicho e intuitiva — 100% focada em esporte. Eliminamos o ruído das plataformas genéricas e criamos um ambiente onde conexões, negócios e oportunidades realmente acontecem.",
+      "Novitch é uma plataforma de nicho e intuitiva — 100% focada em esporte. Eliminamos o ruído das plataformas genéricas e criamos um ambiente onde conexões, negócios e oportunidades realmente acontecem.",
     "sol.c1t": "Networking de Qualidade",
     "sol.c1d":
       "Conecte-se com atletas, agentes, clubes, marcas e profissionais relevantes para sua carreira ou negócio esportivo.",
@@ -316,7 +316,7 @@ var T = {
     "vis.p3d":
       "Evoluir para a camada digital essencial da indústria esportiva global — o lugar onde toda interação profissional, transação e oportunidade vive.",
     "qt.text":
-      'A Novitch não é apenas uma rede social — é a <span class="gradient-text">infraestrutura</span> que o esporte precisa há muito tempo. Estamos construindo o lugar onde <span class="gradient-text-subtle">oportunidades são encontradas, não perdidas</span>.',
+      'A Novitch não é apenas uma plataforma — é a <span class="gradient-text">infraestrutura</span> que o esporte precisa há muito tempo. Estamos construindo o lugar onde <span class="gradient-text-subtle">oportunidades são encontradas, não perdidas</span>.',
     "qt.author": "Arthur Viana, Fundador & CEO",
     "cta.badge": "MVP Disponível Agora",
     "cta.title":
