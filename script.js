@@ -497,3 +497,81 @@ function getCurrentSection() {
   }
   return 'hero';
 }
+
+// ===== MIXPANEL EVENTS =====
+(function () {
+  function track(name, props) {
+    if (typeof mixpanel === 'undefined') return;
+    try {
+      mixpanel.track(name, props || {});
+    } catch (e) {
+      // silencioso
+    }
+  }
+
+  // 1) Scroll depth
+  var lastBucket = null;
+  var scrollBuckets = [25, 50, 75, 90];
+  window.addEventListener('scroll', function () {
+    var doc = document.documentElement;
+    var scrollTop = window.scrollY || doc.scrollTop || 0;
+    var scrollHeight = doc.scrollHeight - doc.clientHeight;
+    if (scrollHeight <= 0) return;
+    var pct = (scrollTop / scrollHeight) * 100;
+
+    var bucket = null;
+    for (var i = 0; i < scrollBuckets.length; i++) {
+      if (pct >= scrollBuckets[i]) bucket = scrollBuckets[i];
+    }
+
+    if (bucket !== null && bucket !== lastBucket) {
+      lastBucket = bucket;
+      track('Scroll Depth', {
+        percent: bucket,
+        language: document.documentElement.lang || 'en',
+      });
+    }
+  });
+
+  // 2) Language selection
+  document.querySelectorAll('.lang-option').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = this.getAttribute('data-lang');
+      track('Language Selected', {
+        language: lang,
+      });
+    });
+  });
+
+  // 3) CTA buttons
+  document.querySelectorAll('a.btn-primary, button.btn-primary, .btn-primary').forEach(function (el) {
+    el.addEventListener('click', function () {
+      track('Primary CTA Click', {
+        text: (this.textContent || '').trim().substring(0, 60),
+        section: getCurrentSection(),
+        destination: this.getAttribute('href') || null,
+      });
+    });
+  });
+
+  // 4) Form submit (caso exista no futuro)
+  document.querySelectorAll('form').forEach(function (form) {
+    form.addEventListener('submit', function () {
+      track('Form Submit', {
+        form_id: form.getAttribute('id') || null,
+        action: form.getAttribute('action') || null,
+      });
+    });
+  });
+
+  // 5) External outbound links
+  document.querySelectorAll('a[href^="http"], a[href^="mailto"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      track('Outbound Link Click', {
+        url: this.getAttribute('href'),
+        text: (this.textContent || '').trim().substring(0, 60),
+        section: getCurrentSection(),
+      });
+    });
+  });
+})();
