@@ -453,3 +453,47 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+// ===== MIXPANEL ANALYTICS =====
+if (typeof mixpanel !== 'undefined') {
+  mixpanel.track('Page View', {
+    path: window.location.pathname,
+    referrer: document.referrer,
+    timestamp: new Date().toISOString(),
+    language: document.documentElement.lang || 'en'
+  });
+}
+
+document.querySelectorAll('.btn-primary').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    if (typeof mixpanel !== 'undefined') {
+      mixpanel.track('CTA Click', {
+        button_text: this.textContent.trim().substring(0, 50),
+        destination: this.getAttribute('href'),
+        section: getCurrentSection()
+      });
+    }
+  });
+});
+
+document.querySelectorAll('a[href^="http"], a[href^="mailto"]').forEach(function (link) {
+  link.addEventListener('click', function () {
+    if (typeof mixpanel !== 'undefined') {
+      mixpanel.track('External Link Click', {
+        url: this.getAttribute('href'),
+        text: this.textContent.trim().substring(0, 50)
+      });
+    }
+  });
+});
+
+function getCurrentSection() {
+  var sections = document.querySelectorAll('section[id]');
+  var scrollY = window.scrollY + 100;
+  for (var i = sections.length - 1; i >= 0; i--) {
+    if (sections[i].offsetTop <= scrollY) {
+      return sections[i].getAttribute('id');
+    }
+  }
+  return 'hero';
+}
