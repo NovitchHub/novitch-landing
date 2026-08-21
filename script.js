@@ -3,23 +3,53 @@ var T = {
   en: {
     "nav.problem": "Problem",
     "nav.solution": "Solution",
+    "nav.evaluations": "Evaluations",
     "nav.market": "Market",
     "nav.features": "Features",
     "nav.vision": "Vision",
     "nav.open_platform": "Open Platform",
     "nav.open_platform_mob": "Open Platform →",
-    "hero.badge": "MVP Live — Try It Now",
+    "hero.badge": "Platform Live — Join Now",
     "hero.title":
       'The Digital<br><span class="gradient-text">Infrastructure</span><br>of Sports',
     "hero.desc":
-      "Novitch is the platform that connects the entire sports ecosystem — athletes, clubs, agents, brands, and professionals — in one powerful platform.",
-    "hero.cta1": "Access the Platform",
-    "hero.cta2": "Explore the Vision",
+      "Novitch connects the entire sports ecosystem in one powerful platform. Athletes build video portfolios and access official evaluations; clubs, scouts, brands, and partners discover talent and drive the sports industry forward.",
+    "hero.cta1": "Access Platform",
+    "hero.cta2": "Explore Opportunities",
     "hero.s1l": "Global Sports Market",
-    "hero.s2l": "People in Sports",
-    "hero.s3l": "Dominant Platform",
-    "hero.s4l": "Opportunities Lost",
+    "hero.s2l": "Age Groups Covered",
+    "hero.s3l": "Zero Algorithm Clutter",
+    "hero.s4l": "Real-Time Evaluations",
     "hero.scroll": "Scroll",
+    "mockup.athlete_badge": "ATHLETE",
+    "mockup.athlete_role": "Left Winger / Attacking Midfielder",
+    "mockup.athlete_info": "17 yo (2009) • U-17 • Left-Footed • 1.81m • 74kg",
+    "mockup.athlete_video": "▶ Play Season Highlights (02:15)",
+    "mockup.athlete_visits": "👁️ 14 Scouts & Clubs visited this profile this week",
+    "mockup.eval_badge": "OFFICIAL EVALUATION",
+    "mockup.eval_title": "Official U-17 Evaluation — Desportivo Club",
+    "mockup.eval_loc": "📍 São Paulo, SP (Training Center)",
+    "mockup.eval_pos": "⚽ Positions: Center Back, Left Back, Defensive Midfielder",
+    "mockup.eval_dates": "📅 Applications Open • Oct 20-22",
+    "mockup.eval_btn": "Apply Now (1-Click)",
+    "mockup.eval_status": "Status: Verified Organization ✓",
+    "eval.label": "Live Platform Feature",
+    "eval.title":
+      'Official Sports Evaluations<br><span class="gradient-text">All in One Place</span>',
+    "eval.desc":
+      "No more lost trials in chaotic groups. On Novitch, clubs and sports academies post verified evaluation calls with exact dates, age groups, required positions, and map location.",
+    "eval.c1t": "Discover Open Evaluations",
+    "eval.c1d":
+      "Filter by age group (U-9 to U-20 and Professional), gender, position, and location with transparent requirements.",
+    "eval.c2t": "1-Click Direct Application",
+    "eval.c2d":
+      "Apply directly to club calls by sending your technical profile, match highlights, and biometric stats in one tap.",
+    "eval.c3t": "Transparent Status Tracking",
+    "eval.c3d":
+      "Get notified at every stage: Application Sent, Under Review, Shortlisted, or Approved by the coaching staff.",
+    "eval.tag1": "U-9 to Professional",
+    "eval.tag2": "Verified Clubs & Academies",
+    "eval.tag3": "Real-Time Status Alerts",
     "mq.football": "Football",
     "mq.basketball": "Basketball",
     "mq.tennis": "Tennis",
@@ -61,10 +91,10 @@ var T = {
       "Connect with athletes, agents, clubs, brands, and professionals relevant to your sports career or business.",
     "sol.c2t": "Professional Portfolios",
     "sol.c2d":
-      "Athletes and professionals can showcase their achievements, videos, career history, and relevant information in a structured profile designed to highlight their sports journey.",
-    "sol.c3t": "Opportunities in Sports",
+      "Athletes and professionals can showcase their achievements, videos, career history, and technical data in a structured sports profile.",
+    "sol.c3t": "Evaluations & Opportunities",
     "sol.c3d":
-      "Novitch connects athletes, professionals, and clubs, creating an environment where opportunities can emerge through networking, visibility, and engagement.",
+      "Novitch connects athletes and clubs through open evaluation demands, creating an active hub for trials and talent discovery.",
     "sol.c4t": "Focus on What Matters",
     "sol.c4d":
       "A network where content and connections are sports-focused, with fewer distractions and more relevance for those who live the game.",
@@ -84,7 +114,7 @@ var T = {
       "Over half the planet follows sports — making it the largest shared interest on Earth.",
     "mkt.it": 'The "LinkedIn of Sports" Doesn\'t Exist Yet',
     "mkt.id":
-      "LinkedIn built a $100B+ company connecting professionals. Instagram and TikTok captured content creation. But no platform has ever captured the <strong class=\"text-neutral-200\">sports ecosystem</strong> — the connections, the deals, the portfolios, the transactions. This is not a feature; it's a category. And it's still empty.",
+      "LinkedIn built a $100B+ company connecting professionals. Instagram and TikTok captured content creation. But no platform has ever captured the <strong class=\"text-neutral-200\">sports ecosystem</strong> — the connections, evaluations, portfolios, and commercial deals. This is not a feature; it's a category. And Novitch is building it.",
     "mkt.t1": "Category Creator",
     "mkt.t2": "Network Effects",
     "mkt.t3": "High Retention",
@@ -92,78 +122,84 @@ var T = {
     "feat.title":
       'Everything Sports Needs,<br><span class="gradient-text">In One Place</span>',
     "feat.desc":
-      "Networking, profiles, transactions, and services — built from the ground up for the sports ecosystem.",
+      "Networking, technical profiles, evaluations, video highlights — built from the ground up for the sports ecosystem.",
     "feat.c1t": "Categorized Profiles",
     "feat.c1d":
-      "Every user is categorized — athletes, agents, clubs, brands, coaches, and more.",
-    "feat.c2t": "Sports Profiles",
+      "Every user is categorized — athletes, agents, clubs, brands, coaches, and sports professionals.",
+    "feat.c2t": "Technical Sports Portfolio",
     "feat.c2d":
-      "Create your profile with bio, location, sports interests, and share content with the community.",
-    "feat.c3t": "Profile Discovery",
+      "Create your profile with positions, dominant foot, biometrics, video highlights, and club history.",
+    "feat.c3t": "Open Evaluations Hub",
     "feat.c3d":
-      "Find and connect with relevant people through smart profile suggestions — with more advanced matching features coming soon.",
-    "feat.c4t": "In-Platform Transactions",
+      "Discover and apply to verified sports evaluations from U-9 to Professional with real-time status tracking.",
+    "feat.c4t": "Profile Visits & Analytics",
     "feat.c4d":
-      "Negotiate deals, sponsorships, and services directly on Novitch. From first contact to signed contract — without leaving the platform.",
-    "feat.c5t": "Opportunity Board",
+      "Know who visited your profile: see when scouts, clubs, and coaches are reviewing your videos and sports stats.",
+    "feat.c5t": "Networking",
     "feat.c5d":
-      "A dedicated hub for trials, job openings, sponsorships, partnerships, and events — filterable by sport, location, and category.",
-    "feat.c6t": "Analytics & Insights",
+      "Connect and message directly with athletes, agents, and club representatives without intermediary noise.",
+    "feat.c6t": "Instant Push Notifications",
     "feat.c6d":
-      "Track profile views, connection growth, engagement metrics, and market trends relevant to your sports niche.",
+      "Get instant alerts whenever a new evaluation matching your position or category is published in your region.",
     "badge.soon": "Soon",
+    "badge.live": "Active",
     "eco.label": "For Everyone in Sports",
     "eco.title":
       'Built for the<br><span class="gradient-text">Entire Ecosystem</span>',
     "eco.c1t": "Athletes",
-    "eco.c1d": "Showcase talent & get discovered",
+    "eco.c1d": "Showcase video highlights & join evaluations",
     "eco.c2t": "Clubs & Teams",
-    "eco.c2d": "Scout, recruit & manage talent",
+    "eco.c2d": "Publish evaluations & scout talent",
     "eco.c3t": "Agents & Scouts",
-    "eco.c3d": "Find clients & close deals",
+    "eco.c3d": "Filter prospects by position & verified video",
     "eco.c4t": "Brands & Sponsors",
-    "eco.c4d": "Activate sports marketing",
+    "eco.c4d": "Activate targeted sports marketing",
     "eco.c5t": "Coaches",
-    "eco.c5d": "Build authority & find opportunities",
+    "eco.c5d": "Build authority & connect with clubs",
     "eco.c6t": "Health Pros",
-    "eco.c6d": "Physios, nutritionists, sports med",
+    "eco.c6d": "Physios, nutritionists, sports medicine",
     "eco.c7t": "Content Creators",
     "eco.c7d": "Sports media & journalism",
-    "eco.c8t": "Event Organizers",
-    "eco.c8d": "Promote & manage sports events",
+    "eco.c8t": "Investors & Partners",
+    "eco.c8d": "Scale the digital infrastructure of sports",
     "vis.label": "Our Vision",
     "vis.title":
       'Where Sports<br><span class="gradient-text">Really Happens</span>',
-    "vis.p1b": "In Progress",
+    "vis.p1b": "Active Phase",
     "vis.p1t": "Connect the Ecosystem",
     "vis.p1d":
-      "Bring every actor in sports into a single, organized digital environment. Build profiles, establish connections, and create the network foundation.",
+      "Bring athletes, clubs, scouts, and professionals into one organized digital hub with video portfolios and active evaluations.",
     "vis.p2b": "Next Phase",
-    "vis.p2t": "Activate Opportunities",
+    "vis.p2t": "Activate Smart Opportunities",
     "vis.p2d":
-      "Launch the opportunity board, smart matching, and in-platform transactions. Turn connections into deals, sponsorships, and partnerships.",
+      "Launch smart evaluation matching, advanced player analytics, and brand partnerships to accelerate sports deals.",
     "vis.p3b": "Long-Term",
-    "vis.p3t": "Become the Infrastructure",
+    "vis.p3t": "Become the Global Infrastructure",
     "vis.p3d":
-      "Evolve into the essential digital layer of the global sports industry — the place where every professional interaction, transaction, and opportunity lives.",
+      "Evolve into the essential digital layer of the global sports industry — where every interaction, evaluation, and deal lives.",
     "qt.text":
       'Novitch isn\'t just a platform — it\'s the <span class="gradient-text">infrastructure</span> that sports has been missing. We\'re building the place where <span class="gradient-text-subtle">opportunities are found, not lost</span>.',
     "qt.author": "Arthur Viana, Founder & CEO",
-    "cta.badge": "MVP Available Now",
+    "cta.badge": "Platform Live Now",
     "cta.title":
       'The Platform Is Live.<br><span class="gradient-text">Are You In?</span>',
     "cta.desc":
-      "Whether you're an investor, a sports professional, or an organization — Novitch is ready. Create your profile, start connecting, and experience the future of sports networking.",
-    "cta.b1": "Go to Novitch",
-    "cta.b2": "Create Your Profile",
+      "Whether you are an athlete seeking evaluations, a club recruiting talent, or an investor looking for category-defining growth — Novitch is ready.",
+    "cta.u_title": "For Athletes & Clubs",
+    "cta.u_desc": "Create your profile, publish your video highlights, and apply to official evaluations.",
+    "cta.u_btn": "Create Free Profile →",
+    "cta.p_title": "For Investors & Partners",
+    "cta.p_desc": "Explore our market thesis, growth roadmap, and B2B partnership opportunities.",
+    "cta.p_btn": "Contact Founders / B2B",
     "cta.tr1": "Secure & Private",
-    "cta.tr2": "MVP Live",
+    "cta.tr2": "Evaluations Active",
     "ft.desc":
       "The digital infrastructure of sports. Connecting the entire ecosystem — athletes, clubs, agents, brands, and professionals — in one platform.",
     "ft.pl": "Platform",
     "ft.app": "Open App",
     "ft.feat": "Features",
     "ft.mkt": "Market",
+    "ft.eval": "Evaluations",
     "ft.vis": "Vision",
     "ft.cl": "Company",
     "ft.cu": "Contact Us",
@@ -172,23 +208,53 @@ var T = {
   "pt-br": {
     "nav.problem": "Problema",
     "nav.solution": "Solução",
+    "nav.evaluations": "Avaliações",
     "nav.market": "Mercado",
     "nav.features": "Funcionalidades",
     "nav.vision": "Visão",
     "nav.open_platform": "Abrir Plataforma",
     "nav.open_platform_mob": "Abrir Plataforma →",
-    "hero.badge": "MVP Ativo — Experimente Agora",
+    "hero.badge": "Plataforma Ativa — Acesse Gratuitamente",
     "hero.title":
-      'A Infraestrutura<br><span class="gradient-text">Digital</span><br>do Esporte',
+      'A Infraestrutura<br><span class="gradient-text">Digital do Esporte</span><br>Onde o Talento Encontra a Oportunidade',
     "hero.desc":
-      "Novitch é a plataforma que conecta todo o ecossistema esportivo — atletas, clubes, agentes, marcas e profissionais — em uma plataforma poderosa.",
+      "A Novitch conecta todo o ecossistema esportivo em uma única plataforma. Atletas constroem portfólios em vídeo e acessam avaliações oficiais; clubes, olheiros, marcas e parceiros descobrem talentos e movimentam a indústria.",
     "hero.cta1": "Acessar a Plataforma",
-    "hero.cta2": "Explorar a Visão",
+    "hero.cta2": "Explorar Oportunidades",
     "hero.s1l": "Mercado Esportivo Global",
-    "hero.s2l": "Pessoas no Esporte",
-    "hero.s3l": "Plataforma Dominante",
-    "hero.s4l": "Oportunidades Perdidas",
+    "hero.s2l": "Categorias Atendidas",
+    "hero.s3l": "Foco Sem Ruído de Algoritmos",
+    "hero.s4l": "Avaliações em Tempo Real",
     "hero.scroll": "Rolar",
+    "mockup.athlete_badge": "ATLETA",
+    "mockup.athlete_role": "Ponta Esquerda / Meia Atacante",
+    "mockup.athlete_info": "17 anos (2009) • Sub-17 • Canhoto • 1,81m • 74kg",
+    "mockup.athlete_video": "▶ Reproduzir Melhores Momentos (02:15)",
+    "mockup.athlete_visits": "👁️ 14 Olheiros e Clubes visitaram este perfil esta semana",
+    "mockup.eval_badge": "AVALIAÇÃO OFICIAL",
+    "mockup.eval_title": "Avaliação Oficial Sub-17 — Clube Desportivo",
+    "mockup.eval_loc": "📍 São Paulo, SP (Centro de Treinamento)",
+    "mockup.eval_pos": "⚽ Posições: Zagueiro, Lateral Esquerdo, Volante",
+    "mockup.eval_dates": "📅 Inscrições Abertas • 20 a 22 de Outubro",
+    "mockup.eval_btn": "Candidatar-se Agora (1 Clique)",
+    "mockup.eval_status": "Status: Organização Verificada ✓",
+    "eval.label": "Recurso em Produção",
+    "eval.title":
+      'Avaliações Esportivas Oficiais<br><span class="gradient-text">Em Um Só Lugar</span>',
+    "eval.desc":
+      "Chega de seletivas perdidas em grupos desorganizados. Na Novitch, clubes e projetos esportivos publicam suas demandas oficiais de avaliação com datas, requisitos, posições necessárias e localização no mapa.",
+    "eval.c1t": "Descubra Avaliações Abertas",
+    "eval.c1d":
+      "Filtre por categoria (Sub-9 a Sub-20 e Profissional), gênero, posição em campo e proximidade geográfica.",
+    "eval.c2t": "Candidatura Direta em 1 Clique",
+    "eval.c2d":
+      "Inscreva-se diretamente nas chamadas dos clubes enviando sua ficha técnica, biometria e vídeos de lances em um clique.",
+    "eval.c3t": "Acompanhamento Transparente",
+    "eval.c3d":
+      "Receba notificações em cada etapa: Inscrição Enviada, Em Análise, Pré-selecionado ou Aprovado pela comissão do clube.",
+    "eval.tag1": "Sub-9 ao Profissional",
+    "eval.tag2": "Clubes e Escolinhas Verificados",
+    "eval.tag3": "Alertas de Status em Tempo Real",
     "mq.football": "Futebol",
     "mq.basketball": "Basquete",
     "mq.tennis": "Tênis",
@@ -210,13 +276,13 @@ var T = {
       "O mercado esportivo global movimenta centenas de bilhões de dólares anualmente. Ainda assim, não existe uma plataforma digital dominante conectando eficientemente todos os atores desse ecossistema. O resultado? Caos, fragmentação e oportunidades perdidas — todos os dias.",
     "prob.c1t": "Atletas Não Conseguem Mostrar Seu Potencial",
     "prob.c1d":
-      "O talento fica enterrado sob memes, anúncios e conteúdo irrelevante em plataformas genéricas. Não existe um espaço dedicado para atletas construírem um portfólio esportivo profissional.",
-    "prob.c2t": "Não Existe Networking Qualificado",
+      "O talento fica enterrado sob memes, anúncios e conteúdo irrelevante em redes genéricas. Não havia um espaço dedicado para atletas construírem um portfólio profissional.",
+    "prob.c2t": "Não Existia Networking Qualificado",
     "prob.c2d":
-      "Agentes, olheiros e clubes lutam para encontrar as conexões certas. Redes tradicionais oferecem ruído, não sinal — tornando o networking qualificado quase impossível.",
+      "Agentes, olheiros e clubes lutam para encontrar as conexões certas. Redes tradicionais oferecem ruído, tornando o networking esportivo ineficiente.",
     "prob.c3t": "Ecossistema Fragmentado",
     "prob.c3d":
-      "Informações, serviços e oportunidades estão espalhados por dezenas de plataformas, grupos de WhatsApp e planilhas. Não existe uma fonte única de verdade.",
+      "Informações, serviços e oportunidades estão espalhados por dezenas de plataformas, grupos de mensagens e planilhas. Não havia uma fonte única de verdade.",
     "prob.c4t": "Oportunidades Perdidas Diariamente",
     "prob.c4d":
       "Patrocínios, transferências, parcerias e negócios escorrem pelos buracos porque as pessoas certas nunca se encontram no momento certo.",
@@ -224,16 +290,16 @@ var T = {
     "sol.title":
       'Uma Plataforma.<br><span class="gradient-text">Ecossistema Inteiro.</span>',
     "sol.desc":
-      "Novitch é uma plataforma de nicho e intuitiva — 100% focada em esporte. Eliminamos o ruído das plataformas genéricas e criamos um ambiente onde conexões, negócios e oportunidades realmente acontecem.",
+      "Novitch é uma plataforma de nicho e intuitiva — 100% focada em esporte. Eliminamos o ruído das redes genéricas e criamos um ambiente onde conexões, avaliações e oportunidades realmente acontecem.",
     "sol.c1t": "Networking de Qualidade",
     "sol.c1d":
       "Conecte-se com atletas, agentes, clubes, marcas e profissionais relevantes para sua carreira ou negócio esportivo.",
     "sol.c2t": "Portfólios Profissionais",
     "sol.c2d":
-      "Atletas e profissionais podem exibir suas conquistas, vídeos, histórico de carreira e informações relevantes em um perfil estruturado para destacar sua trajetória no esporte.",
-    "sol.c3t": "Oportunidades no Esporte",
+      "Atletas e profissionais podem exibir suas conquistas, vídeos de lances, histórico e dados técnicos em um perfil esportivo completo.",
+    "sol.c3t": "Avaliações e Oportunidades",
     "sol.c3d":
-      "A Novitch conecta atletas, profissionais e clubes, criando um ambiente onde oportunidades podem surgir por meio de networking, visibilidade e engajamento.",
+      "A Novitch conecta atletas, profissionais e clubes através de demandas abertas de avaliação e visibilidade qualificada.",
     "sol.c4t": "Foco no que Importa",
     "sol.c4d":
       "Uma rede onde conteúdos e conexões são voltados ao esporte, com menos distrações e mais relevância para quem vive o jogo.",
@@ -251,9 +317,9 @@ var T = {
     "mkt.s3l": "Fãs de Esporte no Mundo",
     "mkt.s3d":
       "Mais da metade do planeta acompanha esportes — tornando-o o maior interesse compartilhado na Terra.",
-    "mkt.it": 'O "LinkedIn do Esporte" Ainda Não Existe',
+    "mkt.it": 'O "LinkedIn do Esporte" Não Existia Até Agora',
     "mkt.id":
-      'O LinkedIn construiu uma empresa de $100B+ conectando profissionais. Instagram e TikTok capturaram a criação de conteúdo. Mas nenhuma plataforma jamais capturou o <strong class="text-neutral-200">ecossistema esportivo</strong> — as conexões, os negócios, os portfólios, as transações. Isso não é uma funcionalidade; é uma categoria. E ainda está vazia.',
+      'O LinkedIn construiu uma empresa de $100B+ conectando o mundo corporativo. O Instagram capturou o entretenimento visual. Mas nenhuma plataforma jamais organizou a <strong class="text-neutral-200">infraestrutura digital do esporte</strong> — os portfólios, as avaliações, os negócios e as conexões do ecossistema. Isso não é uma funcionalidade; é uma categoria. E a Novitch está construindo.',
     "mkt.t1": "Criador de Categoria",
     "mkt.t2": "Efeitos de Rede",
     "mkt.t3": "Alta Retenção",
@@ -261,78 +327,84 @@ var T = {
     "feat.title":
       'Tudo Que o Esporte Precisa,<br><span class="gradient-text">Em Um Só Lugar</span>',
     "feat.desc":
-      "Networking, perfis, transações e serviços — construídos do zero para o ecossistema esportivo.",
+      "Networking, ficha técnica, avaliações oficiais, vídeos de lances — construídos do zero para o ecossistema esportivo.",
     "feat.c1t": "Perfis Categorizados",
     "feat.c1d":
-      "Cada usuário é categorizado — atletas, agentes, clubes, marcas, técnicos e mais.",
-    "feat.c2t": "Perfis Esportivos",
+      "Cada usuário é categorizado — atletas, agentes, clubes, marcas, técnicos, profissionais de saúde e fãs.",
+    "feat.c2t": "Portfólio Esportivo Técnico",
     "feat.c2d":
-      "Crie seu perfil com bio, localização, interesses esportivos e compartilhe conteúdo com a comunidade.",
-    "feat.c3t": "Descoberta de Perfis",
+      "Crie seu perfil com posições, pé dominante, biometria, galeria de lances em vídeo e histórico de clubes.",
+    "feat.c3t": "Hub de Avaliações Oficiais",
     "feat.c3d":
-      "Encontre e conecte-se com pessoas relevantes através de sugestões inteligentes de perfis — com recursos de matching mais avançados em breve.",
-    "feat.c4t": "Transações na Plataforma",
+      "Descubra e candidate-se a avaliações oficiais de clubes do Sub-9 ao Profissional com acompanhamento de status.",
+    "feat.c4t": "Radar de Visitas ao Perfil",
     "feat.c4d":
-      "Negocie acordos, patrocínios e serviços diretamente na Novitch. Do primeiro contato ao contrato assinado — sem sair da plataforma.",
-    "feat.c5t": "Quadro de Oportunidades",
+      "Saiba quando olheiros, clubes e técnicos visualizaram seu perfil e assistiram aos seus vídeos de lances.",
+    "feat.c5t": "Networking",
     "feat.c5d":
-      "Um hub dedicado a testes, vagas, patrocínios, parcerias e eventos — filtrável por esporte, localização e categoria.",
-    "feat.c6t": "Análises e Insights",
+      "Conecte-se e converse diretamente com atletas, dirigentes e profissionais sem intermediários ou ruído.",
+    "feat.c6t": "Notificações Instantâneas",
     "feat.c6d":
-      "Acompanhe visualizações de perfil, crescimento de conexões, métricas de engajamento e tendências de mercado relevantes para seu nicho esportivo.",
+      "Receba alertas no celular sempre que uma nova avaliação compatível com sua posição ou categoria for publicada.",
     "badge.soon": "Em Breve",
+    "badge.live": "Ativo",
     "eco.label": "Para Todos no Esporte",
     "eco.title":
       'Construída Para o<br><span class="gradient-text">Ecossistema Inteiro</span>',
     "eco.c1t": "Atletas",
-    "eco.c1d": "Mostre seu talento e seja descoberto",
+    "eco.c1d": "Mostre seus lances em vídeo e participe de avaliações",
     "eco.c2t": "Clubes e Times",
-    "eco.c2d": "Olhe, recrute e gerencie talentos",
+    "eco.c2d": "Publique avaliações e gerencie inscrições de atletas",
     "eco.c3t": "Agentes e Olheiros",
-    "eco.c3d": "Encontre clientes e feche negócios",
+    "eco.c3d": "Filtre talentos por posição, idade e vídeos reais",
     "eco.c4t": "Marcas e Patrocinadores",
-    "eco.c4d": "Ative o marketing esportivo",
+    "eco.c4d": "Ative o marketing esportivo e descubra promessas",
     "eco.c5t": "Técnicos",
-    "eco.c5d": "Construa autoridade e encontre oportunidades",
+    "eco.c5d": "Construa autoridade e conecte-se com clubes",
     "eco.c6t": "Profissionais de Saúde",
-    "eco.c6d": "Fisioterapeutas, nutricionistas, medicina esportiva",
+    "eco.c6d": "Fisioterapeutas, nutricionistas e preparação física",
     "eco.c7t": "Criadores de Conteúdo",
-    "eco.c7d": "Mídia esportiva e jornalismo",
-    "eco.c8t": "Organizadores de Eventos",
-    "eco.c8d": "Promova e gerencie eventos esportivos",
+    "eco.c7d": "Mídia esportiva, fotografia e jornalismo",
+    "eco.c8t": "Investidores e Parceiros",
+    "eco.c8d": "Faça parte da infraestrutura que digitaliza o esporte",
     "vis.label": "Nossa Visão",
     "vis.title":
       'Onde o Esporte<br><span class="gradient-text">Acontece de Verdade</span>',
-    "vis.p1b": "Em Progresso",
+    "vis.p1b": "Fase Ativa",
     "vis.p1t": "Conectar o Ecossistema",
     "vis.p1d":
-      "Trazer todos os atores do esporte para um único ambiente digital organizado. Construir perfis, estabelecer conexões e criar a fundação da rede.",
+      "Reunir atletas, clubes, olheiros e profissionais em um único ambiente digital com portfólios em vídeo e avaliações oficiais abertas.",
     "vis.p2b": "Próxima Fase",
-    "vis.p2t": "Ativar Oportunidades",
+    "vis.p2t": "Ativar Oportunidades Inteligentes",
     "vis.p2d":
-      "Lançar o quadro de oportunidades, matching inteligente e transações na plataforma. Transformar conexões em negócios, patrocínios e parcerias.",
+      "Lançar matching inteligente de avaliações, inteligência de dados avançada e parcerias comerciais com marcas esportivas.",
     "vis.p3b": "Longo Prazo",
-    "vis.p3t": "Tornar-se a Infraestrutura",
+    "vis.p3t": "Tornar-se a Infraestrutura Global",
     "vis.p3d":
-      "Evoluir para a camada digital essencial da indústria esportiva global — o lugar onde toda interação profissional, transação e oportunidade vive.",
+      "Evoluir para a camada digital essencial da indústria esportiva mundial — o lugar onde toda interação, avaliação e oportunidade acontece.",
     "qt.text":
       'A Novitch não é apenas uma plataforma — é a <span class="gradient-text">infraestrutura</span> que o esporte precisa há muito tempo. Estamos construindo o lugar onde <span class="gradient-text-subtle">oportunidades são encontradas, não perdidas</span>.',
     "qt.author": "Arthur Viana, Fundador & CEO",
-    "cta.badge": "MVP Disponível Agora",
+    "cta.badge": "Plataforma Disponível Agora",
     "cta.title":
       'A Plataforma Está No Ar.<br><span class="gradient-text">Você Vai Ficar de Fora?</span>',
     "cta.desc":
-      "Seja você investidor, profissional do esporte ou organização — a Novitch está pronta. Crie seu perfil, comece a se conectar e experimente o futuro do networking esportivo.",
-    "cta.b1": "Ir para a Novitch",
-    "cta.b2": "Criar Seu Perfil",
+      "Seja você um atleta buscando avaliações, um clube captando talentos, ou um parceiro/investidor participando da evolução da indústria — a Novitch está pronta.",
+    "cta.u_title": "Para Atletas, Profissionais do Esporte & Clubes",
+    "cta.u_desc": "Crie seu perfil, publique seus lances em vídeo e candidate-se a avaliações oficiais.",
+    "cta.u_btn": "Criar Perfil Gratuito →",
+    "cta.p_title": "Para Investidores & Parceiros",
+    "cta.p_desc": "Conheça nossa tese de mercado, roadmap de crescimento e oportunidades de parceria B2B.",
+    "cta.p_btn": "Falar com Fundadores / B2B",
     "cta.tr1": "Seguro e Privado",
-    "cta.tr2": "MVP Ativo",
+    "cta.tr2": "Avaliações Ativas",
     "ft.desc":
       "A infraestrutura digital do esporte. Conectando todo o ecossistema — atletas, clubes, agentes, marcas e profissionais — em uma plataforma.",
     "ft.pl": "Plataforma",
     "ft.app": "Abrir App",
     "ft.feat": "Funcionalidades",
     "ft.mkt": "Mercado",
+    "ft.eval": "Avaliações",
     "ft.vis": "Visão",
     "ft.cl": "Empresa",
     "ft.cu": "Fale Conosco",
@@ -340,12 +412,31 @@ var T = {
   },
 };
 
-var currentLang = "en";
+// Detecção inteligente de idioma inicial com persistência em localStorage
+var savedLang = null;
+try {
+  savedLang = localStorage.getItem("novitch_lang");
+} catch (e) {
+  // Ignora restrições locais de storage
+}
+
+var browserLang = (navigator.language || navigator.userLanguage || "")
+  .toLowerCase()
+  .startsWith("pt")
+  ? "pt-br"
+  : "en";
+
+var currentLang = savedLang || browserLang || "pt-br";
 
 function applyLang(lang) {
   currentLang = lang;
+  try {
+    localStorage.setItem("novitch_lang", lang);
+  } catch (e) {}
+
   var dict = T[lang];
   if (!dict) return;
+
   document.querySelectorAll("[data-i18n]").forEach(function (el) {
     var key = el.getAttribute("data-i18n");
     if (dict[key] !== undefined) el.textContent = dict[key];
@@ -359,68 +450,86 @@ function applyLang(lang) {
     lang === "pt-br"
       ? "Novitch — A Infraestrutura Digital do Esporte"
       : "Novitch — The Digital Infrastructure of Sports";
+
+  var langLabel = document.getElementById("langLabel");
+  if (langLabel) {
+    langLabel.textContent = lang === "pt-br" ? "PT" : "EN";
+  }
+
+  document.querySelectorAll(".lang-option").forEach(function (b) {
+    var check = b.querySelector(".lang-check");
+    if (check) {
+      if (b.getAttribute("data-lang") === lang) {
+        check.classList.remove("hidden");
+      } else {
+        check.classList.add("hidden");
+      }
+    }
+  });
 }
 
 // ===== LANGUAGE DROPDOWN =====
 var langToggle = document.getElementById("langToggle");
 var langDropdown = document.getElementById("langDropdown");
-var langLabel = document.getElementById("langLabel");
 var langOpen = false;
 
-langToggle.addEventListener("click", function (e) {
-  e.stopPropagation();
-  langOpen = !langOpen;
-  if (langOpen) {
-    langDropdown.classList.remove("hidden");
-    langDropdown.classList.add("lang-dropdown-enter");
-  } else {
-    langDropdown.classList.add("hidden");
-    langDropdown.classList.remove("lang-dropdown-enter");
-  }
-});
-
-document.addEventListener("click", function (e) {
-  if (!document.getElementById("langWrapper").contains(e.target)) {
-    langOpen = false;
-    langDropdown.classList.add("hidden");
-    langDropdown.classList.remove("lang-dropdown-enter");
-  }
-});
-
-document.querySelectorAll(".lang-option").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    var lang = this.getAttribute("data-lang");
-    applyLang(lang);
-    langLabel.textContent = lang === "pt-br" ? "PT" : "EN";
-    document.querySelectorAll(".lang-option").forEach(function (b) {
-      b.querySelector(".lang-check").classList.add("hidden");
-    });
-    this.querySelector(".lang-check").classList.remove("hidden");
-    langOpen = false;
-    langDropdown.classList.add("hidden");
-    langDropdown.classList.remove("lang-dropdown-enter");
+if (langToggle && langDropdown) {
+  langToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    langOpen = !langOpen;
+    if (langOpen) {
+      langDropdown.classList.remove("hidden");
+      langDropdown.classList.add("lang-dropdown-enter");
+    } else {
+      langDropdown.classList.add("hidden");
+      langDropdown.classList.remove("lang-dropdown-enter");
+    }
   });
-});
+
+  document.addEventListener("click", function (e) {
+    var langWrapper = document.getElementById("langWrapper");
+    if (langWrapper && !langWrapper.contains(e.target)) {
+      langOpen = false;
+      langDropdown.classList.add("hidden");
+      langDropdown.classList.remove("lang-dropdown-enter");
+    }
+  });
+
+  document.querySelectorAll(".lang-option").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var lang = this.getAttribute("data-lang");
+      applyLang(lang);
+      langOpen = false;
+      langDropdown.classList.add("hidden");
+      langDropdown.classList.remove("lang-dropdown-enter");
+    });
+  });
+}
+
+// Inicializa o idioma configurado
+applyLang(currentLang);
 
 // ===== MOBILE MENU =====
 var mobileMenuBtn = document.getElementById("mobileMenuBtn");
 var mobileMenu = document.getElementById("mobileMenu");
 var menuOpen = false;
-mobileMenuBtn.addEventListener("click", function () {
-  menuOpen = !menuOpen;
-  mobileMenu.classList.toggle("hidden");
-  mobileMenuBtn.innerHTML = menuOpen
-    ? '<span class="iconify" data-icon="lucide:x" data-width="20"></span>'
-    : '<span class="iconify" data-icon="lucide:menu" data-width="20"></span>';
-});
-mobileMenu.querySelectorAll("a").forEach(function (link) {
-  link.addEventListener("click", function () {
-    mobileMenu.classList.add("hidden");
-    menuOpen = false;
-    mobileMenuBtn.innerHTML =
-      '<span class="iconify" data-icon="lucide:menu" data-width="20"></span>';
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener("click", function () {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle("hidden");
+    mobileMenuBtn.innerHTML = menuOpen
+      ? '<span class="iconify" data-icon="lucide:x" data-width="20"></span>'
+      : '<span class="iconify" data-icon="lucide:menu" data-width="20"></span>';
   });
-});
+  mobileMenu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      mobileMenu.classList.add("hidden");
+      menuOpen = false;
+      mobileMenuBtn.innerHTML =
+        '<span class="iconify" data-icon="lucide:menu" data-width="20"></span>';
+    });
+  });
+}
 
 // ===== SCROLL REVEAL =====
 var revealElements = document.querySelectorAll(".reveal");
@@ -438,10 +547,14 @@ revealElements.forEach(function (el) {
 
 // ===== NAV SCROLL =====
 var nav = document.querySelector("nav");
-window.addEventListener("scroll", function () {
-  nav.style.borderBottomColor =
-    window.scrollY > 50 ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.05)";
-});
+if (nav) {
+  window.addEventListener("scroll", function () {
+    nav.style.borderBottomColor =
+      window.scrollY > 50
+        ? "rgba(255,255,255,0.08)"
+        : "rgba(255,255,255,0.05)";
+  });
+}
 
 // ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
@@ -455,64 +568,62 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 });
 
 // ===== MIXPANEL ANALYTICS =====
-if (typeof mixpanel !== 'undefined') {
-  mixpanel.track('Page View', {
+if (typeof mixpanel !== "undefined") {
+  mixpanel.track("Page View", {
     path: window.location.pathname,
     referrer: document.referrer,
     timestamp: new Date().toISOString(),
-    language: document.documentElement.lang || 'en'
+    language: document.documentElement.lang || "pt-br",
   });
 }
 
-document.querySelectorAll('.btn-primary').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    if (typeof mixpanel !== 'undefined') {
-      mixpanel.track('CTA Click', {
+document.querySelectorAll(".btn-primary").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    if (typeof mixpanel !== "undefined") {
+      mixpanel.track("CTA Click", {
         button_text: this.textContent.trim().substring(0, 50),
-        destination: this.getAttribute('href'),
-        section: getCurrentSection()
+        destination: this.getAttribute("href"),
+        section: getCurrentSection(),
       });
     }
   });
 });
 
 document.querySelectorAll('a[href^="http"], a[href^="mailto"]').forEach(function (link) {
-  link.addEventListener('click', function () {
-    if (typeof mixpanel !== 'undefined') {
-      mixpanel.track('External Link Click', {
-        url: this.getAttribute('href'),
-        text: this.textContent.trim().substring(0, 50)
+  link.addEventListener("click", function () {
+    if (typeof mixpanel !== "undefined") {
+      mixpanel.track("External Link Click", {
+        url: this.getAttribute("href"),
+        text: this.textContent.trim().substring(0, 50),
       });
     }
   });
 });
 
 function getCurrentSection() {
-  var sections = document.querySelectorAll('section[id]');
+  var sections = document.querySelectorAll("section[id]");
   var scrollY = window.scrollY + 100;
   for (var i = sections.length - 1; i >= 0; i--) {
     if (sections[i].offsetTop <= scrollY) {
-      return sections[i].getAttribute('id');
+      return sections[i].getAttribute("id");
     }
   }
-  return 'hero';
+  return "hero";
 }
 
-// ===== MIXPANEL EVENTS =====
+// ===== MIXPANEL EVENTS TRACKING =====
 (function () {
   function track(name, props) {
-    if (typeof mixpanel === 'undefined') return;
+    if (typeof mixpanel === "undefined") return;
     try {
       mixpanel.track(name, props || {});
-    } catch (e) {
-      // silencioso
-    }
+    } catch (e) {}
   }
 
   // 1) Scroll depth
   var lastBucket = null;
   var scrollBuckets = [25, 50, 75, 90];
-  window.addEventListener('scroll', function () {
+  window.addEventListener("scroll", function () {
     var doc = document.documentElement;
     var scrollTop = window.scrollY || doc.scrollTop || 0;
     var scrollHeight = doc.scrollHeight - doc.clientHeight;
@@ -526,52 +637,46 @@ function getCurrentSection() {
 
     if (bucket !== null && bucket !== lastBucket) {
       lastBucket = bucket;
-      track('Scroll Depth', {
+      track("Scroll Depth", {
         percent: bucket,
-        language: document.documentElement.lang || 'en',
+        language: document.documentElement.lang || "pt-br",
       });
     }
   });
 
   // 2) Language selection
-  document.querySelectorAll('.lang-option').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var lang = this.getAttribute('data-lang');
-      track('Language Selected', {
+  document.querySelectorAll(".lang-option").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var lang = this.getAttribute("data-lang");
+      track("Language Selected", {
         language: lang,
       });
     });
   });
 
   // 3) CTA buttons
-  document.querySelectorAll('a.btn-primary, button.btn-primary, .btn-primary').forEach(function (el) {
-    el.addEventListener('click', function () {
-      track('Primary CTA Click', {
-        text: (this.textContent || '').trim().substring(0, 60),
-        section: getCurrentSection(),
-        destination: this.getAttribute('href') || null,
+  document
+    .querySelectorAll("a.btn-primary, button.btn-primary, .btn-primary")
+    .forEach(function (el) {
+      el.addEventListener("click", function () {
+        track("Primary CTA Click", {
+          text: (this.textContent || "").trim().substring(0, 60),
+          section: getCurrentSection(),
+          destination: this.getAttribute("href") || null,
+        });
       });
     });
-  });
 
-  // 4) Form submit (caso exista no futuro)
-  document.querySelectorAll('form').forEach(function (form) {
-    form.addEventListener('submit', function () {
-      track('Form Submit', {
-        form_id: form.getAttribute('id') || null,
-        action: form.getAttribute('action') || null,
+  // 4) Outbound links
+  document
+    .querySelectorAll('a[href^="http"], a[href^="mailto"]')
+    .forEach(function (link) {
+      link.addEventListener("click", function () {
+        track("Outbound Link Click", {
+          url: this.getAttribute("href"),
+          text: this.textContent.trim().substring(0, 60),
+          section: getCurrentSection(),
+        });
       });
     });
-  });
-
-  // 5) External outbound links
-  document.querySelectorAll('a[href^="http"], a[href^="mailto"]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      track('Outbound Link Click', {
-        url: this.getAttribute('href'),
-        text: (this.textContent || '').trim().substring(0, 60),
-        section: getCurrentSection(),
-      });
-    });
-  });
 })();
