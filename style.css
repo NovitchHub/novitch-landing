@@ -311,6 +311,38 @@ body {
   );
   border: 1px solid rgba(30, 144, 255, 0.15);
 }
+.live-badge {
+  background: linear-gradient(
+    135deg,
+    rgba(43, 255, 136, 0.15),
+    rgba(47, 211, 199, 0.1)
+  );
+  border: 1px solid rgba(43, 255, 136, 0.3);
+  color: #2bff88;
+}
+.ui-mockup-card {
+  background: rgba(15, 15, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(30, 144, 255, 0.08);
+  transition: all 0.4s ease;
+}
+.ui-mockup-card:hover {
+  border-color: rgba(30, 144, 255, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 50px rgba(47, 211, 199, 0.12);
+}
+.dual-cta-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s ease;
+}
+.dual-cta-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(30, 144, 255, 0.3);
+  transform: translateY(-3px);
+}
 .lang-dropdown-enter {
   animation: langDropIn 0.15s ease-out forwards;
 }
