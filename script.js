@@ -122,7 +122,7 @@ var T = {
     "feat.title":
       'Everything Sports Needs,<br><span class="gradient-text">In One Place</span>',
     "feat.desc":
-      "Networking, technical profiles, evaluations, video highlights, and direct chat — built from the ground up for the sports ecosystem.",
+      "Networking, technical profiles, evaluations, video highlights — built from the ground up for the sports ecosystem.",
     "feat.c1t": "Categorized Profiles",
     "feat.c1d":
       "Every user is categorized — athletes, agents, clubs, brands, coaches, and sports professionals.",
@@ -135,7 +135,7 @@ var T = {
     "feat.c4t": "Profile Visits & Analytics",
     "feat.c4d":
       "Know who visited your profile: see when scouts, clubs, and coaches are reviewing your videos and sports stats.",
-    "feat.c5t": "Direct Chat & Networking",
+    "feat.c5t": "Networking",
     "feat.c5d":
       "Connect and message directly with athletes, agents, and club representatives without intermediary noise.",
     "feat.c6t": "Instant Push Notifications",
@@ -327,7 +327,7 @@ var T = {
     "feat.title":
       'Tudo Que o Esporte Precisa,<br><span class="gradient-text">Em Um Só Lugar</span>',
     "feat.desc":
-      "Networking, ficha técnica, avaliações oficiais, vídeos de lances e chat direto — construídos do zero para o ecossistema esportivo.",
+      "Networking, ficha técnica, avaliações oficiais, vídeos de lances — construídos do zero para o ecossistema esportivo.",
     "feat.c1t": "Perfis Categorizados",
     "feat.c1d":
       "Cada usuário é categorizado — atletas, agentes, clubes, marcas, técnicos, profissionais de saúde e fãs.",
@@ -340,7 +340,7 @@ var T = {
     "feat.c4t": "Radar de Visitas ao Perfil",
     "feat.c4d":
       "Saiba quando olheiros, clubes e técnicos visualizaram seu perfil e assistiram aos seus vídeos de lances.",
-    "feat.c5t": "Chat Direto & Networking",
+    "feat.c5t": "Networking",
     "feat.c5d":
       "Conecte-se e converse diretamente com atletas, dirigentes e profissionais sem intermediários ou ruído.",
     "feat.c6t": "Notificações Instantâneas",
@@ -390,7 +390,7 @@ var T = {
       'A Plataforma Está No Ar.<br><span class="gradient-text">Você Vai Ficar de Fora?</span>',
     "cta.desc":
       "Seja você um atleta buscando avaliações, um clube captando talentos, ou um parceiro/investidor participando da evolução da indústria — a Novitch está pronta.",
-    "cta.u_title": "Para Atletas & Clubes",
+    "cta.u_title": "Para Atletas, Profissionais do Esporte & Clubes",
     "cta.u_desc": "Crie seu perfil, publique seus lances em vídeo e candidate-se a avaliações oficiais.",
     "cta.u_btn": "Criar Perfil Gratuito →",
     "cta.p_title": "Para Investidores & Parceiros",
